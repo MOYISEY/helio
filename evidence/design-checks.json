@@ -1,0 +1,514 @@
+{
+  "reviewer": "Independent delegated Codex design/accessibility/performance audit",
+  "closedAt": "2026-10-02T13:47:18.488Z",
+  "target": "Local final implementation before publication",
+  "assessment": "No outstanding local design findings after targeted fixes",
+  "sourceSnapshotSHA256": {
+    "src/App.tsx": "500f122f2bc9cb5faea41e525e79b9d0fab3b902387041dfb39bf1b463594e2e",
+    "src/Scene.tsx": "bf5086ae27fe1cdeb02d89f1edc61fbb8c054dcadc770caa5399650d127e94f5",
+    "src/Fallback.tsx": "fed9c56c68728ed32faf9e7677b9c24cd559908cda850e555602dd91992c1700",
+    "src/main.tsx": "ff3d7216e48488c1a751da2776503db9a6b155ffd44c2f9e5b3656354afde26e",
+    "src/style.css": "2680ae7c2f4c41f4a30e1ed65b0abf687141ee17d608e94100a1e11284b432a0",
+    "src/refinement.css": "a16f2b6706b8d129bbdeaa3c2b3f124bf95d04d2ad0041c4cf9a24f3f9ef0159",
+    "src/framing.css": "bfce0545834db56c47b3ea8f53cb6eccd9dd3e0091e572d84f2722c0580795af",
+    "src/solar.ts": "35ccc0a6e6038d69cc2192ee940a98d3ce93f4d6bd2f3366f34104ed5bbab688",
+    "src/state.ts": "85a409a8e5e8cf67e322d45f190f54192ed48544d37920b087eb3ce64f9ff29d",
+    "src/export.ts": "c40ec987857a185a8b512c9819bba3b258433f8ba948c9a726d5ce8009424579"
+  },
+  "broad": {
+    "checkedAt": "2026-10-02T13:33:31.194Z",
+    "scenarios": [
+      {
+        "name": "ru-360",
+        "width": 360,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "ru-390",
+        "width": 390,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "ru-768",
+        "width": 768,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "ru-1440",
+        "width": 1440,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "en-day",
+        "width": 1440,
+        "height": 1000,
+        "language": "en",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "ru-night",
+        "width": 390,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "en-2d",
+        "width": 390,
+        "height": 1000,
+        "language": "en",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "ru-reduced",
+        "width": 390,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "ru-no-webgl",
+        "width": 390,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "ru-200percent-desktop",
+        "width": 1440,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      },
+      {
+        "name": "ru-200percent-mobile",
+        "width": 390,
+        "height": 1000,
+        "language": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "horizontalOverflow": false
+      }
+    ]
+  },
+  "targetedFixes": {
+    "checkedAt": "2026-10-02T13:45:27.829Z",
+    "scenarios": [
+      {
+        "name": "2d-390",
+        "width": 390,
+        "pageErrors": [],
+        "axeViolations": [],
+        "headerWithinViewport": true,
+        "directionMarks": [
+          "N",
+          "E",
+          "S",
+          "W",
+          "N"
+        ],
+        "allDirectionMarksWithinViewport": true,
+        "horizontalOverflow": false
+      },
+      {
+        "name": "2d-360",
+        "width": 360,
+        "pageErrors": [],
+        "axeViolations": [],
+        "headerWithinViewport": true,
+        "directionMarks": [
+          "N",
+          "E",
+          "S",
+          "W",
+          "N"
+        ],
+        "allDirectionMarksWithinViewport": true,
+        "horizontalOverflow": false
+      },
+      {
+        "name": "text200-390",
+        "width": 390,
+        "pageErrors": [],
+        "axeViolations": [],
+        "headerWithinViewport": true,
+        "directionMarks": [],
+        "allDirectionMarksWithinViewport": true,
+        "horizontalOverflow": false
+      },
+      {
+        "name": "text200-360",
+        "width": 360,
+        "pageErrors": [],
+        "axeViolations": [],
+        "headerWithinViewport": true,
+        "directionMarks": [],
+        "allDirectionMarksWithinViewport": true,
+        "horizontalOverflow": false
+      }
+    ]
+  },
+  "interactions": {
+    "checkedAt": "2026-10-02T13:33:11.648Z",
+    "scenarios": [
+      {
+        "width": 390,
+        "assertions": 33,
+        "allPassed": true,
+        "pageErrors": [],
+        "unexpectedExternalRequests": [],
+        "checks": [
+          {
+            "name": "fresh context does not save automatically",
+            "passed": true
+          },
+          {
+            "name": "English html lang",
+            "passed": true
+          },
+          {
+            "name": "keyboard time scrubber",
+            "passed": true
+          },
+          {
+            "name": "keyboard north camera",
+            "passed": true
+          },
+          {
+            "name": "camera east",
+            "passed": true
+          },
+          {
+            "name": "camera south",
+            "passed": true
+          },
+          {
+            "name": "camera west",
+            "passed": true
+          },
+          {
+            "name": "follow sun reset",
+            "passed": true
+          },
+          {
+            "name": "event jump Civil dawn",
+            "passed": true
+          },
+          {
+            "name": "event jump Sunrise",
+            "passed": true
+          },
+          {
+            "name": "event jump Golden light ends",
+            "passed": true
+          },
+          {
+            "name": "event jump Solar noon",
+            "passed": true
+          },
+          {
+            "name": "event jump Golden light starts",
+            "passed": true
+          },
+          {
+            "name": "event jump Sunset",
+            "passed": true
+          },
+          {
+            "name": "event jump Civil dusk",
+            "passed": true
+          },
+          {
+            "name": "next day",
+            "passed": true
+          },
+          {
+            "name": "previous day",
+            "passed": true
+          },
+          {
+            "name": "now selected zoned date",
+            "passed": true
+          },
+          {
+            "name": "invalid zone recoverable",
+            "passed": true
+          },
+          {
+            "name": "manual keyboard expansion",
+            "passed": true
+          },
+          {
+            "name": "invalid coordinates recoverable",
+            "passed": true
+          },
+          {
+            "name": "custom location applied",
+            "passed": true
+          },
+          {
+            "name": "explicit local save",
+            "passed": true
+          },
+          {
+            "name": "restore saved instant",
+            "passed": true
+          },
+          {
+            "name": "actual JSON download",
+            "passed": true
+          },
+          {
+            "name": "actual ICS download",
+            "passed": true
+          },
+          {
+            "name": "delete saved",
+            "passed": true
+          },
+          {
+            "name": "2D renderer",
+            "passed": true
+          },
+          {
+            "name": "3D renderer restored",
+            "passed": true
+          },
+          {
+            "name": "Russian html lang",
+            "passed": true
+          },
+          {
+            "name": "valid source link and opener protection",
+            "passed": true
+          },
+          {
+            "name": "no unexpected external requests",
+            "passed": true
+          },
+          {
+            "name": "no page errors",
+            "passed": true
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "assertions": 33,
+        "allPassed": true,
+        "pageErrors": [],
+        "unexpectedExternalRequests": [],
+        "checks": [
+          {
+            "name": "fresh context does not save automatically",
+            "passed": true
+          },
+          {
+            "name": "English html lang",
+            "passed": true
+          },
+          {
+            "name": "keyboard time scrubber",
+            "passed": true
+          },
+          {
+            "name": "keyboard north camera",
+            "passed": true
+          },
+          {
+            "name": "camera east",
+            "passed": true
+          },
+          {
+            "name": "camera south",
+            "passed": true
+          },
+          {
+            "name": "camera west",
+            "passed": true
+          },
+          {
+            "name": "follow sun reset",
+            "passed": true
+          },
+          {
+            "name": "event jump Civil dawn",
+            "passed": true
+          },
+          {
+            "name": "event jump Sunrise",
+            "passed": true
+          },
+          {
+            "name": "event jump Golden light ends",
+            "passed": true
+          },
+          {
+            "name": "event jump Solar noon",
+            "passed": true
+          },
+          {
+            "name": "event jump Golden light starts",
+            "passed": true
+          },
+          {
+            "name": "event jump Sunset",
+            "passed": true
+          },
+          {
+            "name": "event jump Civil dusk",
+            "passed": true
+          },
+          {
+            "name": "next day",
+            "passed": true
+          },
+          {
+            "name": "previous day",
+            "passed": true
+          },
+          {
+            "name": "now selected zoned date",
+            "passed": true
+          },
+          {
+            "name": "invalid zone recoverable",
+            "passed": true
+          },
+          {
+            "name": "manual keyboard expansion",
+            "passed": true
+          },
+          {
+            "name": "invalid coordinates recoverable",
+            "passed": true
+          },
+          {
+            "name": "custom location applied",
+            "passed": true
+          },
+          {
+            "name": "explicit local save",
+            "passed": true
+          },
+          {
+            "name": "restore saved instant",
+            "passed": true
+          },
+          {
+            "name": "actual JSON download",
+            "passed": true
+          },
+          {
+            "name": "actual ICS download",
+            "passed": true
+          },
+          {
+            "name": "delete saved",
+            "passed": true
+          },
+          {
+            "name": "2D renderer",
+            "passed": true
+          },
+          {
+            "name": "3D renderer restored",
+            "passed": true
+          },
+          {
+            "name": "Russian html lang",
+            "passed": true
+          },
+          {
+            "name": "valid source link and opener protection",
+            "passed": true
+          },
+          {
+            "name": "no unexpected external requests",
+            "passed": true
+          },
+          {
+            "name": "no page errors",
+            "passed": true
+          }
+        ]
+      }
+    ]
+  },
+  "render": {
+    "checkedAt": "2026-10-02T13:34:18.857Z",
+    "results": [
+      {
+        "reduced": false,
+        "start": 185,
+        "idleDraws": 0,
+        "stateChangeDraws": 116,
+        "offscreenDraws": 0,
+        "resumedDraws": 4,
+        "canvas": {
+          "width": 1029,
+          "height": 660,
+          "rectWidth": 686.375,
+          "rectHeight": 440,
+          "dpr": 3
+        }
+      },
+      {
+        "reduced": true,
+        "start": 30,
+        "idleDraws": 0,
+        "stateChangeDraws": 4,
+        "offscreenDraws": 0,
+        "resumedDraws": 4,
+        "canvas": {
+          "width": 1029,
+          "height": 660,
+          "rectWidth": 686.375,
+          "rectHeight": 440,
+          "dpr": 3
+        }
+      }
+    ]
+  },
+  "exportFileSHA256": {
+    "plan-390.json": "99ad389b648fdd3fafdb2f5c393293c1ed40235d1b1b043d739a229f0752e3de",
+    "plan-390.ics": "88a1add0118819c0082d7ddaebb164205ad13c30cd4ba0142688461ecbcdd3ca",
+    "plan-1440.json": "99ad389b648fdd3fafdb2f5c393293c1ed40235d1b1b043d739a229f0752e3de",
+    "plan-1440.ics": "aaf1a9366d81f2c423a19fae5a2ea45227911ca01eb19e940efde30ff9d20d28"
+  },
+  "limitations": [
+    "Reference videos were reviewed by parent/separate visual reviewer, not this audit agent.",
+    "Local working-tree audit; no public-live verification is claimed here.",
+    "200% text-size stress doubles computed font sizes; this is not a native browser zoom measurement.",
+    "Draw-call instrumentation is not an FPS, battery or physical-device benchmark.",
+    "Axe results do not establish full accessibility conformance or arbitrary WebGL pixel contrast."
+  ]
+}

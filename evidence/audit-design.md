@@ -54,4 +54,12 @@ Target: isolated audit dev server `http://127.0.0.1:5182/helio/`. This phase rev
 1. **Medium — 200% text clips the mobile language button.** At 390 px, the header language button spans x=368.86…408.86, so roughly 19 px are outside the viewport. `main{overflow:hidden}` hides this without document overflow. Allow the header to wrap/recompose; verify the control remains fully visible and reachable.
 2. **Medium — mobile fallback crops the azimuth panorama.** At 390 px and solar azimuth 263°, the sun disk is clipped at the right edge and only the S compass label remains visible. The overscanned 3D world and sliced SVG crop the 2D projection. Use a full-width schematic projection for fallback and contain SVG overflow, then verify all compass marks and the selected sun are visible.
 
-The report remains open until these two findings have been retested. Public live QA is not claimed by this phase.
+### Closure and targeted retest
+
+Both remaining findings were fixed and retested at **360 and 390 px**. The header wraps under 200% text enlargement; the language control now ends at x=338.41 for 360 px and x=366.61 for 390 px, fully within the viewport. The 2D schematic uses a full-width mobile world and an uncropped SVG projection. N/E/S/W/N and the selected sun are visible. A final follow-up placed compass directions above the darkening overlay; the actual latest 390 px screenshot confirms readable light labels.
+
+The four targeted scenarios have zero axe findings, zero page errors and no horizontal overflow. Final captures: `2d-360-fixed.png`, `2d-390-fixed.png`, `text200-360-fixed.png`, `text200-390-fixed.png`; report `fix-report.json`. **No local blocking design/accessibility findings remain.**
+
+Compact machine evidence and SHA-256 snapshots are saved in [`design-checks.json`](./design-checks.json). The broad scenarios, targeted fixes and interaction runs occurred at their recorded times; the final CSS-only fixes received focused retests. Full private captures are intentionally excluded from product assets.
+
+Limitations: this is Chromium desktop automation at mobile CSS widths, with real inspected screenshots, not a physical-phone or assistive-technology certification. Text enlargement is a computed-font stress test, not native browser zoom. Render evidence measures draw calls, not FPS or battery use. The reviewer did not view the source reference videos. Public live QA is not claimed by this phase and remains with the parent after deployment.
