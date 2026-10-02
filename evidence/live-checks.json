@@ -1,0 +1,367 @@
+{
+  "checkedAt": "2026-10-02T13:49:23.477Z",
+  "url": "https://moyisey.github.io/helio/",
+  "scope": "Directed real-browser interactions and screenshots; emulated viewport/touch, not physical devices or installed Safari; no screen-reader certification.",
+  "matrix": [
+    {
+      "width": 360,
+      "lang": "ru",
+      "period": "day",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 360,
+      "lang": "ru",
+      "period": "night",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "previousAttempts": [
+        {
+          "width": 360,
+          "lang": "ru",
+          "period": "night",
+          "errors": [],
+          "external": [],
+          "badResponses": [],
+          "passed": false,
+          "failure": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://moyisey.github.io/helio/?city=astana&date=2026-10-02&lang=ru&time=00:00\", waiting until \"networkidle\"\u001b[22m\n"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "width": 360,
+      "lang": "en",
+      "period": "day",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "previousAttempts": [
+        {
+          "width": 360,
+          "lang": "en",
+          "period": "day",
+          "errors": [],
+          "external": [],
+          "badResponses": [],
+          "passed": false,
+          "failure": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://moyisey.github.io/helio/?city=astana&date=2026-10-02&lang=en&time=12:00\", waiting until \"networkidle\"\u001b[22m\n"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "width": 360,
+      "lang": "en",
+      "period": "night",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 390,
+      "lang": "ru",
+      "period": "day",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 390,
+      "lang": "ru",
+      "period": "night",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "period": "day",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "previousAttempts": [
+        {
+          "width": 390,
+          "lang": "en",
+          "period": "day",
+          "errors": [],
+          "external": [],
+          "badResponses": [],
+          "passed": false,
+          "failure": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://moyisey.github.io/helio/?city=astana&date=2026-10-02&lang=en&time=12:00\", waiting until \"networkidle\"\u001b[22m\n"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "period": "night",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 768,
+      "lang": "ru",
+      "period": "day",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 768,
+      "lang": "ru",
+      "period": "night",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "previousAttempts": [
+        {
+          "width": 768,
+          "lang": "ru",
+          "period": "night",
+          "errors": [],
+          "external": [],
+          "badResponses": [],
+          "passed": false,
+          "failure": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://moyisey.github.io/helio/?city=astana&date=2026-10-02&lang=ru&time=00:00\", waiting until \"networkidle\"\u001b[22m\n"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "period": "day",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "period": "night",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 1440,
+      "lang": "ru",
+      "period": "day",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 1440,
+      "lang": "ru",
+      "period": "night",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "period": "day",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "period": "night",
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "period": "day",
+      "view": "2d",
+      "reduced": true,
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 1440,
+      "lang": "ru",
+      "period": "night",
+      "reduced": true,
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    },
+    {
+      "width": 390,
+      "lang": "ru",
+      "period": "day",
+      "noWebGL": true,
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "previousAttempts": [
+        {
+          "width": 390,
+          "lang": "ru",
+          "period": "day",
+          "noWebGL": true,
+          "errors": [],
+          "external": [],
+          "badResponses": [],
+          "passed": false,
+          "failure": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://moyisey.github.io/helio/?city=astana&date=2026-10-02&lang=ru&time=12:00\", waiting until \"networkidle\"\u001b[22m\n"
+        }
+      ],
+      "axe": []
+    },
+    {
+      "width": 390,
+      "lang": "ru",
+      "period": "day",
+      "text200": true,
+      "errors": [],
+      "external": [],
+      "badResponses": [],
+      "passed": true,
+      "axe": []
+    }
+  ],
+  "actions": [
+    {
+      "width": 390,
+      "checks": [
+        "keyboard skip",
+        "keyboard scrubber",
+        "all seven event jumps",
+        "four headings and follow",
+        "2D and 3D",
+        "languages",
+        "day navigation and now",
+        "all city options",
+        "two DST 01:30 instants",
+        "explicit save restore delete",
+        "actual JSON and ICS downloads",
+        "manual coordinates and recovery",
+        "IANA edit and error",
+        "polar night with twilight",
+        "source link actual popup",
+        "brand home"
+      ],
+      "errors": [],
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "checks": [
+        "keyboard skip",
+        "keyboard scrubber",
+        "all seven event jumps",
+        "four headings and follow",
+        "2D and 3D",
+        "languages",
+        "day navigation and now",
+        "all city options",
+        "two DST 01:30 instants",
+        "explicit save restore delete",
+        "actual JSON and ICS downloads",
+        "manual coordinates and recovery",
+        "IANA edit and error",
+        "polar night with twilight",
+        "source link actual popup",
+        "brand home"
+      ],
+      "errors": [],
+      "passed": true,
+      "previousAttempts": [
+        {
+          "width": 1440,
+          "checks": [
+            "keyboard skip",
+            "keyboard scrubber",
+            "all seven event jumps",
+            "four headings and follow",
+            "2D and 3D",
+            "languages",
+            "day navigation and now",
+            "all city options",
+            "two DST 01:30 instants",
+            "explicit save restore delete",
+            "actual JSON and ICS downloads",
+            "manual coordinates and recovery",
+            "IANA edit and error",
+            "polar night with twilight"
+          ],
+          "errors": [],
+          "passed": false,
+          "failure": "page.waitForURL: Timeout 30000ms exceeded."
+        }
+      ]
+    }
+  ],
+  "engines": [
+    {
+      "engine": "firefox",
+      "errors": [],
+      "passed": true
+    },
+    {
+      "engine": "webkit",
+      "errors": [],
+      "passed": true,
+      "previousAttempts": [
+        {
+          "engine": "webkit",
+          "errors": [],
+          "passed": false,
+          "failure": "page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://moyisey.github.io/helio/?lang=en&city=new-york&date=2026-03-08&time=12:00\", waiting until \"networkidle\"\u001b[22m\n"
+        }
+      ]
+    }
+  ],
+  "passed": true,
+  "retestedAt": "2026-10-02T14:04:48.435Z"
+}
