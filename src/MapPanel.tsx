@@ -5,6 +5,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import {areaBounds,buildNeighborhood,type Neighborhood,type Feature} from './buildings.ts';
 import {ShadowLayer,type Shade} from './ShadowLayer.ts';
 import type {Place} from './solar.ts';
+import {muteBasemap} from './mapPalette.ts';
 setWorkerUrl(workerUrl);
 type Props={place:Place;position:{azimuth:number;altitude:number};en:boolean;reduced:boolean;onPoint:(lon:number,lat:number)=>void;minute:number;minutes:number;timeLabel:string;onMinute:(minute:number)=>void;onRetry:()=>void};
 const shadeText:Record<Shade,[string,string]>={night:['Солнце ниже горизонта','Sun below the horizon'],inside:['Точка внутри здания. Выберите место снаружи.','Point inside a building. Choose a spot outside.'],shade:['Тень от учтённого здания','Shadow from a loaded building'],clear:['Учтённые здания не перекрывают солнце','Loaded buildings do not block the sun'],insufficient:['Данных недостаточно','Insufficient data']};
@@ -21,7 +22,7 @@ export default function MapPanel({place,position,en,reduced,onPoint,minute,minut
   marker.on('dragend',()=>{const p=marker.getLngLat();latest.current.onPoint(wrapLongitude(p.lng),p.lat);});map.on('click',e=>latest.current.onPoint(wrapLongitude(e.lngLat.lng),e.lngLat.lat));
   map.on('error',()=>{if(!disposed){sourceError.current=true;setNetwork(true);setShade('insufficient');}});map.getCanvas().addEventListener('webglcontextlost',()=>{if(!disposed){setFailed(true);setShade('insufficient');}});
   const timer=window.setTimeout(()=>{if(!map?.isStyleLoaded())setNetwork(true);},18000);
-  map.on('style.load',()=>{window.clearTimeout(timer);setReady(true);setNetwork(false);const style=map!.getStyle();for(const l of style.layers){if(l.type==='fill-extrusion')map!.setLayoutProperty(l.id,'visibility','none');if(l.type==='fill'&&l['source-layer']==='building'){map!.setLayerZoomRange(l.id,13,24);map!.setPaintProperty(l.id,'fill-color','#d4cebd');}}map!.addSource('helio-boundary',{type:'geojson',data:{type:'FeatureCollection',features:[]}});map!.addLayer({id:'helio-boundary-line',type:'line',source:'helio-boundary',paint:{'line-color':'#304d88','line-width':2,'line-dasharray':[3,2]}});border();});
+  map.on('style.load',()=>{window.clearTimeout(timer);setReady(true);setNetwork(false);muteBasemap(map!);const style=map!.getStyle();for(const l of style.layers){if(l.type==='fill-extrusion')map!.setLayoutProperty(l.id,'visibility','none');if(l.type==='fill'&&l['source-layer']==='building'){map!.setLayerZoomRange(l.id,13,24);map!.setPaintProperty(l.id,'fill-color','#d4cebd');}}map!.addSource('helio-boundary',{type:'geojson',data:{type:'FeatureCollection',features:[]}});map!.addLayer({id:'helio-boundary-line',type:'line',source:'helio-boundary',paint:{'line-color':'#304d88','line-width':2,'line-dasharray':[3,2]}});border();});
   const observer=new ResizeObserver(()=>map?.resize());observer.observe(host.current!);
   return()=>{disposed=true;window.clearTimeout(timer);observer.disconnect();cancelWait.current?.();generation.current++;marker.remove();map?.remove();mapRef.current=null;markerRef.current=null;layerRef.current=null;};
  }catch{map?.remove();setFailed(true);mapRef.current=null;}},[]);

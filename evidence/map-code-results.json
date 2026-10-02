@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T15:24:14.840Z",
+  "generatedAt": "2026-10-02T15:49:56.919Z",
   "reviewer": "delegated Codex numerical/code audit agent",
   "scope": [
     "src/buildings.ts",
@@ -10,15 +10,16 @@
     "combined": {
       "command": "node --max-old-space-size=256 --experimental-strip-types --test tests/*.test.ts",
       "exitCode": 0,
-      "tests": 36,
-      "pass": 36,
+      "tests": 37,
+      "pass": 37,
       "fail": 0,
       "skipped": 0,
-      "mapTests": 21,
+      "mapTests": 22,
       "originalSolarTests": 15,
-      "durationMs": 549.8538,
+      "durationMs": 633.5559,
       "heapCeilingMb": 256,
-      "log": "qa-private/map-code/final-tests.txt"
+      "log": "qa-private/map-code/final-tests.txt",
+      "ranBeforeFinalPaintOnlyChange": true
     },
     "typecheck": {
       "command": "npx tsc --noEmit",
@@ -45,20 +46,44 @@
         "total": 112
       },
       "log": "qa-private/map-code/npm-audit.json"
+    },
+    "renderBudget": {
+      "check": "production-render-budget",
+      "parts": 47,
+      "closedContourVertices": 8084,
+      "positionVertices": 95880,
+      "scenePositionVertices": 95884,
+      "maxPositionVertices": 98304,
+      "maxScenePositionVertices": 98308,
+      "incomplete": true,
+      "productionGeometry": "ShadowLayer actual ExtrudeGeometry, bevelEnabled=false, steps=1",
+      "receiverPositionVertices": 4,
+      "receiverIndices": 6,
+      "conservativeExpandedSceneCeiling": 98310
+    },
+    "paintProbe": {
+      "command": "node --experimental-strip-types --input-type=module (frozen-style palette probe)",
+      "passed": true,
+      "paintCalls": 14,
+      "styleSourcesAndAttributionUnchanged": true,
+      "buildingPaintUntouched": true,
+      "shadowSourceDifferenceOnlyGroundPaint": true,
+      "log": "qa-private/map-code/paint-probe.json"
     }
   },
   "sourceSha256": {
-    "src/buildings.ts": "99e3ab8a44f7a7556d88e35b2274b44b463eaeed8a7c5d9689f29f8669fbecd8",
-    "src/ShadowLayer.ts": "cb0d6441089fc2014f51ff4fd80364f0c9d575299c0cb50b8a88b2f3f13a10d9",
-    "tests/map-geometry.test.ts": "65c1009bb987e0b913fb27bb23f6f3ea9df6f975d6382be2dc9a90f4f11b4914",
+    "src/buildings.ts": "90b6ee1eb32aea1024380abaf251f7171996f604820c9115899223346f5a39d6",
+    "src/ShadowLayer.ts": "c00cf95ef63fc7be6de414c264d4d5c5126b1de8f9524229eda9b872291abced",
+    "tests/map-geometry.test.ts": "4a847f317a83e76441973d90e9f3c8780b552456e61ce2ae4f78d8829eed189d",
     "src/solar.ts": "35ccc0a6e6038d69cc2192ee940a98d3ce93f4d6bd2f3366f34104ed5bbab688",
-    "tests/numerical-audit.test.ts": "d28004e3215946c217ed55181d15bbab9d26ab66ede03a7a8f71511a5570acac"
+    "tests/numerical-audit.test.ts": "d28004e3215946c217ed55181d15bbab9d26ab66ede03a7a8f71511a5570acac",
+    "src/mapPalette.ts": "3bf7981fc8d84a8d4f613f35ad9bc8c3d1d6c134025f0eece4c6b3a6ecd142c9"
   },
   "baselineUnchanged": true,
   "guards": {
     "halfSizeMeters": 150,
     "outputParts": 240,
-    "outputVertices": 24000,
+    "outputVertices": 8192,
     "scanFeatures": 10000,
     "scanOuterPolygons": 50000,
     "scanOuterVertices": 1000000,
@@ -68,8 +93,10 @@
     "relevantFeaturePolygons": 240,
     "polygonRings": 128,
     "groupFragments": 960,
-    "groupVertices": 24000,
-    "observerHeightMeters": 1.6
+    "groupVertices": 8192,
+    "observerHeightMeters": 1.6,
+    "buildingPositionVerticesCeiling": 98304,
+    "scenePositionVerticesCeiling": 98308
   },
   "confirmedFixes": [
     "quadratic cyclic-ring allocation",
@@ -80,7 +107,8 @@
     "insufficient results for incomplete/invalid models",
     "full tall-roof shadow camera frustum",
     "supported PCFShadowMap and nonfinite solar containment",
-    "active repaint request gate"
+    "active repaint request gate",
+    "closed-contour cap bounds actual extrusion geometry below 100000 vertices"
   ],
   "preFixFailure": {
     "input": "authored synthetic 30000-vertex ring",
@@ -103,5 +131,12 @@
     "Shared WebGL context reviewed in source; synthetic Node tests do not emulate GPU state",
     "Public deployment, actual offscreen draw counts and physical-device QA belong to integration/live audit",
     "Bounded clipping inputs may still be expensive on pathological intersection patterns"
-  ]
+  ],
+  "reportedFinalPaintChecks": {
+    "source": "implementation agent report; not rerun as a full suite by this reviewer",
+    "tests": 37,
+    "pass": 37,
+    "durationMs": 582.8,
+    "productionBuild": "PASS"
+  }
 }

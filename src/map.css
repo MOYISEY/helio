@@ -12,6 +12,8 @@
 .atlas-v2 .atlas-modes,.atlas-v2 .city-search,.atlas-v2 .map-panel{grid-column:1/-1;min-width:0}
 .atlas-modes{align-items:flex-start}
 .map-toolbar>p{min-width:0}.map-buttons{flex-shrink:0}
+.map-panel .map-pin{width:44px;height:44px;padding:0;border:0;border-radius:50%;background:transparent;box-shadow:none;font-size:18px;line-height:44px;text-align:center;isolation:isolate}
+.map-pin::before{content:'';position:absolute;inset:9px;border:1px solid #182747;border-radius:50%;background:#ffb970;box-shadow:0 0 0 2px #fff9,0 2px 8px #18274766;z-index:-1;pointer-events:none}
 .map-panel button,.city-results button{overflow-wrap:anywhere;line-height:1.5}
 .neighborhood-controls .build-neighborhood{flex-wrap:wrap;max-width:100%;min-width:min(310px,100%)}
 .neighborhood-controls .build-neighborhood span{white-space:normal}

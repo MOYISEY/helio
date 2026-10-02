@@ -1,0 +1,368 @@
+{
+  "reviewedAt": "2026-10-02T15:38:58.574Z",
+  "reviewer": "Independent delegated Codex design audit agent",
+  "status": "closed-local-no-blocking-findings",
+  "scope": {
+    "finalPreview": "http://127.0.0.1:5196/helio/",
+    "publicLiveVerifiedByThisAgent": false,
+    "browser": "Headless Chromium, software WebGL available",
+    "playwright": "1.63.0",
+    "axe": "4.13.0",
+    "maplibre": "6.11.2",
+    "three": "0.186.1",
+    "actualProvider": "OpenFreeMap ordinary interactive requests",
+    "persistedProviderTiles": false,
+    "persistedRawBuildingFeatures": false,
+    "text200Method": "All computed font sizes doubled; not native browser zoom"
+  },
+  "initialViewport": {
+    "checkedAt": "2026-10-02T14:58:39.349Z",
+    "base": "http://127.0.0.1:5188/helio/",
+    "validCases": 10,
+    "discarded": [
+      "ru-320-text200: HMR reset/unmounted state, superseded by stable stress run"
+    ],
+    "results": [
+      {
+        "name": "en-320",
+        "width": 320,
+        "lang": "en",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "ru-320",
+        "width": 320,
+        "lang": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "en-360",
+        "width": 360,
+        "lang": "en",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "ru-360",
+        "width": 360,
+        "lang": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "en-390",
+        "width": 390,
+        "lang": "en",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "ru-390",
+        "width": 390,
+        "lang": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "en-768",
+        "width": 768,
+        "lang": "en",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "ru-768",
+        "width": 768,
+        "lang": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "en-1440",
+        "width": 1440,
+        "lang": "en",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      },
+      {
+        "name": "ru-1440",
+        "width": 1440,
+        "lang": "ru",
+        "pageErrors": [],
+        "axeViolations": [],
+        "overflow": false,
+        "outsideControls": [],
+        "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+      }
+    ],
+    "faultCases": [
+      {
+        "name": "no-webgl",
+        "pageErrors": [],
+        "timeWorks": true,
+        "horizonFallback": true
+      },
+      {
+        "name": "network",
+        "pageErrors": [],
+        "timeWorks": true,
+        "horizonFallback": true
+      }
+    ]
+  },
+  "initialControls": {
+    "checkedAt": "2026-10-02T15:11:47.048Z",
+    "base": "http://127.0.0.1:5188/helio/",
+    "results": [
+      {
+        "scenario": "390px",
+        "width": 390,
+        "assertions": 17,
+        "passed": 17,
+        "failed": [],
+        "errors": [],
+        "model": {
+          "parts": 151,
+          "incomplete": "false",
+          "shade": "clear"
+        },
+        "render": {
+          "idleDraws": 0,
+          "idleProviderRequests": 0,
+          "timeChangeDraws": 489,
+          "timeChangeProviderRequests": 0,
+          "offscreenTimeChangeDraws": 489
+        }
+      },
+      {
+        "scenario": "1440px",
+        "width": 1440,
+        "assertions": 17,
+        "passed": 17,
+        "failed": [],
+        "errors": [],
+        "model": {
+          "parts": 151,
+          "incomplete": "false",
+          "shade": "clear"
+        },
+        "render": {
+          "idleDraws": 0,
+          "idleProviderRequests": 0,
+          "timeChangeDraws": 711,
+          "timeChangeProviderRequests": 0,
+          "offscreenTimeChangeDraws": 711
+        }
+      }
+    ],
+    "purpose": "Retains observed pre-fix offscreen draw finding"
+  },
+  "finalControls": {
+    "checkedAt": "2026-10-02T15:33:36.865Z",
+    "base": "http://127.0.0.1:5196/helio/",
+    "results": [
+      {
+        "scenario": "390px",
+        "width": 390,
+        "assertions": 22,
+        "passed": 22,
+        "failed": [],
+        "errors": [],
+        "model": {
+          "parts": 151,
+          "incomplete": "false",
+          "shade": "clear"
+        },
+        "render": {
+          "idleDraws": 0,
+          "idleProviderRequests": 0,
+          "timeChangeDraws": 790,
+          "timeChangeProviderRequests": 0,
+          "offscreenTimeChangeDraws": 0,
+          "visibleReturnDraws": 790
+        }
+      },
+      {
+        "scenario": "1440px",
+        "width": 1440,
+        "assertions": 22,
+        "passed": 22,
+        "failed": [],
+        "errors": [],
+        "model": {
+          "parts": 151,
+          "incomplete": "false",
+          "shade": "clear"
+        },
+        "render": {
+          "idleDraws": 0,
+          "idleProviderRequests": 0,
+          "timeChangeDraws": 1013,
+          "timeChangeProviderRequests": 0,
+          "offscreenTimeChangeDraws": 0,
+          "visibleReturnDraws": 1013
+        }
+      }
+    ]
+  },
+  "finalStress": {
+    "checkedAt": "2026-10-02T15:35:52.886Z",
+    "base": "http://127.0.0.1:5196/helio/",
+    "results": [
+      {
+        "scenario": "ru-320-text200",
+        "width": 320,
+        "lang": "ru",
+        "assertions": 17,
+        "passed": 17,
+        "failed": [],
+        "errors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "en-390-reduced",
+        "width": 390,
+        "lang": "en",
+        "assertions": 19,
+        "passed": 19,
+        "failed": [],
+        "errors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "ru-1440-reduced",
+        "width": 1440,
+        "lang": "ru",
+        "assertions": 19,
+        "passed": 19,
+        "failed": [],
+        "errors": [],
+        "consoleErrors": []
+      }
+    ]
+  },
+  "finalFirstScreen": {
+    "checkedAt": "2026-10-02T15:34:30.631Z",
+    "base": "http://127.0.0.1:5196/helio/",
+    "results": [
+      {
+        "scenario": "1165px-ru",
+        "width": 1165,
+        "height": 747,
+        "lang": "ru",
+        "assertions": 8,
+        "passed": 8,
+        "failed": [],
+        "errors": []
+      },
+      {
+        "scenario": "390px-ru",
+        "width": 390,
+        "height": 844,
+        "lang": "ru",
+        "assertions": 9,
+        "passed": 9,
+        "failed": [],
+        "errors": []
+      },
+      {
+        "scenario": "390px-en",
+        "width": 390,
+        "height": 844,
+        "lang": "en",
+        "assertions": 9,
+        "passed": 9,
+        "failed": [],
+        "errors": []
+      }
+    ]
+  },
+  "finalAssertionCount": 125,
+  "sourceSnapshotSha256": {
+    "src/App.tsx": "ebbefbece8496e8618ef9a257f460004f02ee6bc313b6a70170492db41c02c29",
+    "src/MapPanel.tsx": "185b343feecef183e7764dae9634d0cda485dcb0674250f74daa2dd84c273622",
+    "src/ShadowLayer.ts": "cb0d6441089fc2014f51ff4fd80364f0c9d575299c0cb50b8a88b2f3f13a10d9",
+    "src/buildings.ts": "90b6ee1eb32aea1024380abaf251f7171996f604820c9115899223346f5a39d6",
+    "src/map.css": "8e1a429b3a8a3b2cb078e83be39488fcf7558931b62e1fbc855645894b9da91e",
+    "src/Scene.tsx": "bf5086ae27fe1cdeb02d89f1edc61fbb8c054dcadc770caa5399650d127e94f5",
+    "src/Fallback.tsx": "fed9c56c68728ed32faf9e7677b9c24cd559908cda850e555602dd91992c1700",
+    "src/style.css": "2680ae7c2f4c41f4a30e1ed65b0abf687141ee17d608e94100a1e11284b432a0",
+    "src/refinement.css": "a16f2b6706b8d129bbdeaa3c2b3f124bf95d04d2ad0041c4cf9a24f3f9ef0159",
+    "src/framing.css": "bfce0545834db56c47b3ea8f53cb6eccd9dd3e0091e572d84f2722c0580795af",
+    "src/solar.ts": "35ccc0a6e6038d69cc2192ee940a98d3ce93f4d6bd2f3366f34104ed5bbab688",
+    "src/state.ts": "85a409a8e5e8cf67e322d45f190f54192ed48544d37920b087eb3ce64f9ff29d",
+    "package.json": "a2d4f42635c533727e99c97767d555d6ab290d7cfafb9696c3f5d6857ff43b01",
+    "vite.config.ts": "c8777a84568adf4ac86174406777da67059a90a04600538639106bf9a430d0f4"
+  },
+  "buildSnapshotSha256": {
+    "docs/index.html": "9d7dc3c69339c0d99cf341d1fe6ec083b99aed73154cdabf1229b2944a40b52e",
+    "docs/assets/index-DeNz209J.js": "078d0b15f9ce06f814959f68fa6166df8944f75a2c013fa34f82512d8ac10731",
+    "docs/assets/index-EFA3yQJg.css": "a08f1ce009c387adc0c6290d71e5df010b3e228285f174647fe636732192d988",
+    "docs/assets/maplibre-gl-worker-CRiIRpYb.js": "096f3b4deeeaa7ed1372a96978bea3495b78250041df835fada34f12320e11d2",
+    "docs/assets/MapPanel-B8-mEBLf.css": "946f40662e206d3f7ecf6ef4df1881ff23819a9f93b1419a07e2609f70e7bbf4",
+    "docs/assets/MapPanel-D4rxi39j.js": "b6cf05fba7529206ba52d559e712ac3266e1bdd9c37dd0565acfbe82fbcf4527",
+    "docs/assets/Scene-BZQZwfwu.js": "8d631b135e5be060ba7a8aeef51c987ff37ddae8ad8251e742949f66f33ef010",
+    "docs/assets/three.module-hWLjphbp.js": "c6704dbb2e5e0055a89c166a1968082fc5c719a4acbbced70e20c4553cd2c5c1"
+  },
+  "evidence": {
+    "report": "evidence/audit-map-design.md",
+    "privateReports": [
+      "qa-private/map-design/matrix-report.json",
+      "qa-private/map-design/interaction-report.json",
+      "qa-private/map-design-final/interaction-report.json",
+      "qa-private/map-design-final/stress-report.json",
+      "qa-private/map-design-final/first-screen-report.json"
+    ],
+    "privateVisuals": [
+      "qa-private/map-design-final/first-screen-ru-1165.png",
+      "qa-private/map-design-final/first-screen-ru-390.png",
+      "qa-private/map-design-final/map-jump-ru-390.png",
+      "qa-private/map-design-final/built-390.png",
+      "qa-private/map-design-final/built-1440.png",
+      "qa-private/map-design-final/ru-320-text200-top.png",
+      "qa-private/map-design-final/en-390-reduced-built.png"
+    ],
+    "scripts": [
+      "qa-private/map-matrix.mjs",
+      "qa-private/map-interactions.mjs",
+      "qa-private/map-final-stress.mjs",
+      "qa-private/map-first-screen.mjs"
+    ]
+  },
+  "limitations": [
+    "Some near/side dashed boundary edges can be cropped by the enlarged mobile camera.",
+    "Provider data and building heights remain cartographic estimates.",
+    "No physical-device, native Safari, screen-reader, FPS or battery benchmark claim.",
+    "Source reference videos were not viewed by this reviewer.",
+    "Public live QA is a separate deployment/regression audit."
+  ]
+}

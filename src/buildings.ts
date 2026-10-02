@@ -4,7 +4,8 @@ export type Polygon=Point[][];
 export type Building={polygons:Polygon[];height:number;base:number;conditional:boolean};
 export type Feature={id?:string|number;properties?:Record<string,unknown>|null;geometry:{type:string;coordinates:unknown}};
 export type Neighborhood={buildings:Building[];parts:number;vertices:number;conditional:number;incomplete:boolean;skipped:number;reasons?:Record<string,number>};
-export const HALF_SIZE=150,MAX_PARTS=240,MAX_VERTICES=24000,EYE_HEIGHT=1.6;
+// Closed contour vertices bound no-bevel, one-step extrusion to <=12x vertices.
+export const HALF_SIZE=150,MAX_PARTS=240,MAX_VERTICES=8192,EYE_HEIGHT=1.6;
 export const MAX_INPUT_FEATURES=10000,MAX_INPUT_VERTICES=100000,MAX_RING_VERTICES=2048,MAX_FEATURE_VERTICES=8192;
 export const MAX_PREFILTER_VERTICES=1000000,MAX_PREFILTER_POLYGONS=50000;
 const MAX_FEATURE_POLYGONS=MAX_PARTS,MAX_POLYGON_RINGS=128,MAX_GROUP_POLYGONS=960,MAX_MERCATOR_LAT=85.051129;
