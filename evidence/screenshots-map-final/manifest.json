@@ -1,0 +1,326 @@
+{
+  "scope": "Paired native screenshots of the same actual deployed WebGL2 neighborhood at08:00/18:00. The block is built once per viewport; only solar time changes. Map crops plus normal viewport shots include local time controls. Ordinary provider loading; no tile/GeoJSON corpus persisted. Emulated mobile viewport/touch, not a physical device or GPU benchmark. All heights are cartographic estimates.",
+  "capturedFromCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+  "captures": [
+    {
+      "name": "desktop-morning-map",
+      "path": "evidence/screenshots-map-final/desktop-morning-map.png",
+      "kind": "map",
+      "width": 1440,
+      "height": 1000,
+      "at": "2026-10-02T15:56:41.240Z",
+      "url": "https://moyisey.github.io/helio/?city=london&date=2026-06-21&lang=ru&time=08:00",
+      "minute": 480,
+      "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+      "entryScripts": [
+        "/helio/assets/index-JU_mGNCl.js"
+      ],
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025A2) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "buffer": [
+          1294,
+          540
+        ],
+        "css": [
+          1294,
+          540
+        ]
+      },
+      "state": {
+        "modelParts": "134",
+        "modelVertices": "1358",
+        "modelSkipped": "0",
+        "modelReasons": "{}",
+        "modelIncomplete": "false",
+        "shade": "clear"
+      },
+      "localTime": "02 — ПЕРЕДВИНЬТЕ СВЕТ\n08:00 UTC+01:00\n☀ 27.0° · ↗ 86°",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap",
+      "fallback": false,
+      "errors": [],
+      "bytes": 645677,
+      "sha256": "e0974dfa7e2140a3c44c20073fc4a68795afa322230fe49ea61c079be23a8484"
+    },
+    {
+      "name": "desktop-morning-panel",
+      "path": "evidence/screenshots-map-final/desktop-morning-panel.png",
+      "kind": "panel",
+      "width": 1440,
+      "height": 1000,
+      "at": "2026-10-02T15:56:41.240Z",
+      "url": "https://moyisey.github.io/helio/?city=london&date=2026-06-21&lang=ru&time=08:00",
+      "minute": 480,
+      "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+      "entryScripts": [
+        "/helio/assets/index-JU_mGNCl.js"
+      ],
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025A2) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "buffer": [
+          1294,
+          540
+        ],
+        "css": [
+          1294,
+          540
+        ]
+      },
+      "state": {
+        "modelParts": "134",
+        "modelVertices": "1358",
+        "modelSkipped": "0",
+        "modelReasons": "{}",
+        "modelIncomplete": "false",
+        "shade": "clear"
+      },
+      "localTime": "02 — ПЕРЕДВИНЬТЕ СВЕТ\n08:00 UTC+01:00\n☀ 27.0° · ↗ 86°",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap",
+      "fallback": false,
+      "errors": [],
+      "bytes": 714385,
+      "sha256": "8af67778c73a62eb8b24e89a107829aeb559823fc319be9b52bcb2d97bfbe06c"
+    },
+    {
+      "name": "desktop-evening-map",
+      "path": "evidence/screenshots-map-final/desktop-evening-map.png",
+      "kind": "map",
+      "width": 1440,
+      "height": 1000,
+      "at": "2026-10-02T15:56:43.498Z",
+      "url": "https://moyisey.github.io/helio/?city=london&date=2026-06-21&lang=ru&time=08:00",
+      "minute": 1080,
+      "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+      "entryScripts": [
+        "/helio/assets/index-JU_mGNCl.js"
+      ],
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025A2) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "buffer": [
+          1294,
+          540
+        ],
+        "css": [
+          1294,
+          540
+        ]
+      },
+      "state": {
+        "modelParts": "134",
+        "modelVertices": "1358",
+        "modelSkipped": "0",
+        "modelReasons": "{}",
+        "modelIncomplete": "false",
+        "shade": "clear"
+      },
+      "localTime": "02 — ПЕРЕДВИНЬТЕ СВЕТ\n18:00 UTC+01:00\n☀ 27.7° · ↗ 274°",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap",
+      "fallback": false,
+      "errors": [],
+      "bytes": 646321,
+      "sha256": "4816f564bfcacd4ab421aba40f9c4c923dc957db4477bc7cbcbb4597e8e839f4"
+    },
+    {
+      "name": "desktop-evening-panel",
+      "path": "evidence/screenshots-map-final/desktop-evening-panel.png",
+      "kind": "panel",
+      "width": 1440,
+      "height": 1000,
+      "at": "2026-10-02T15:56:43.498Z",
+      "url": "https://moyisey.github.io/helio/?city=london&date=2026-06-21&lang=ru&time=08:00",
+      "minute": 1080,
+      "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+      "entryScripts": [
+        "/helio/assets/index-JU_mGNCl.js"
+      ],
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025A2) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "buffer": [
+          1294,
+          540
+        ],
+        "css": [
+          1294,
+          540
+        ]
+      },
+      "state": {
+        "modelParts": "134",
+        "modelVertices": "1358",
+        "modelSkipped": "0",
+        "modelReasons": "{}",
+        "modelIncomplete": "false",
+        "shade": "clear"
+      },
+      "localTime": "02 — ПЕРЕДВИНЬТЕ СВЕТ\n18:00 UTC+01:00\n☀ 27.7° · ↗ 274°",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap",
+      "fallback": false,
+      "errors": [],
+      "bytes": 713686,
+      "sha256": "cca5596053afba6d385d485a45782d6b1b6d471b2f2af2adffd505967805b1fe"
+    },
+    {
+      "name": "mobile-morning-map",
+      "path": "evidence/screenshots-map-final/mobile-morning-map.png",
+      "kind": "map",
+      "width": 390,
+      "height": 844,
+      "at": "2026-10-02T15:57:32.573Z",
+      "url": "https://moyisey.github.io/helio/?city=london&date=2026-06-21&lang=ru&time=08:00",
+      "minute": 480,
+      "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+      "entryScripts": [
+        "/helio/assets/index-JU_mGNCl.js"
+      ],
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025A2) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "buffer": [
+          349,
+          420
+        ],
+        "css": [
+          349,
+          420
+        ]
+      },
+      "state": {
+        "modelParts": "134",
+        "modelVertices": "1358",
+        "modelSkipped": "0",
+        "modelReasons": "{}",
+        "modelIncomplete": "false",
+        "shade": "clear"
+      },
+      "localTime": "02 — ПЕРЕДВИНЬТЕ СВЕТ\n08:00 UTC+01:00\n☀ 27.0° · ↗ 86°",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap",
+      "fallback": false,
+      "errors": [],
+      "bytes": 157112,
+      "sha256": "b9cc53840d78b064483a4d498fe65703ed40238c9748265cfa71f1dd22dafe85"
+    },
+    {
+      "name": "mobile-morning-panel",
+      "path": "evidence/screenshots-map-final/mobile-morning-panel.png",
+      "kind": "panel",
+      "width": 390,
+      "height": 844,
+      "at": "2026-10-02T15:57:32.573Z",
+      "url": "https://moyisey.github.io/helio/?city=london&date=2026-06-21&lang=ru&time=08:00",
+      "minute": 480,
+      "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+      "entryScripts": [
+        "/helio/assets/index-JU_mGNCl.js"
+      ],
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025A2) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "buffer": [
+          349,
+          420
+        ],
+        "css": [
+          349,
+          420
+        ]
+      },
+      "state": {
+        "modelParts": "134",
+        "modelVertices": "1358",
+        "modelSkipped": "0",
+        "modelReasons": "{}",
+        "modelIncomplete": "false",
+        "shade": "clear"
+      },
+      "localTime": "02 — ПЕРЕДВИНЬТЕ СВЕТ\n08:00 UTC+01:00\n☀ 27.0° · ↗ 86°",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap",
+      "fallback": false,
+      "errors": [],
+      "bytes": 187050,
+      "sha256": "288b3c0c38aaaa3b99511cf34701ce6216fcd22221c1bd5af9830a02fe6aa61a"
+    },
+    {
+      "name": "mobile-evening-map",
+      "path": "evidence/screenshots-map-final/mobile-evening-map.png",
+      "kind": "map",
+      "width": 390,
+      "height": 844,
+      "at": "2026-10-02T15:57:34.581Z",
+      "url": "https://moyisey.github.io/helio/?city=london&date=2026-06-21&lang=ru&time=08:00",
+      "minute": 1080,
+      "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+      "entryScripts": [
+        "/helio/assets/index-JU_mGNCl.js"
+      ],
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025A2) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "buffer": [
+          349,
+          420
+        ],
+        "css": [
+          349,
+          420
+        ]
+      },
+      "state": {
+        "modelParts": "134",
+        "modelVertices": "1358",
+        "modelSkipped": "0",
+        "modelReasons": "{}",
+        "modelIncomplete": "false",
+        "shade": "clear"
+      },
+      "localTime": "02 — ПЕРЕДВИНЬТЕ СВЕТ\n18:00 UTC+01:00\n☀ 27.7° · ↗ 274°",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap",
+      "fallback": false,
+      "errors": [],
+      "bytes": 156611,
+      "sha256": "7352063be800af5c154fd4f16ca0ee4cdf8d5e5ab4dd8d0e89bfeebc177c9b46"
+    },
+    {
+      "name": "mobile-evening-panel",
+      "path": "evidence/screenshots-map-final/mobile-evening-panel.png",
+      "kind": "panel",
+      "width": 390,
+      "height": 844,
+      "at": "2026-10-02T15:57:34.581Z",
+      "url": "https://moyisey.github.io/helio/?city=london&date=2026-06-21&lang=ru&time=08:00",
+      "minute": 1080,
+      "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+      "entryScripts": [
+        "/helio/assets/index-JU_mGNCl.js"
+      ],
+      "webgl": {
+        "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3050 Laptop GPU (0x000025A2) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "buffer": [
+          349,
+          420
+        ],
+        "css": [
+          349,
+          420
+        ]
+      },
+      "state": {
+        "modelParts": "134",
+        "modelVertices": "1358",
+        "modelSkipped": "0",
+        "modelReasons": "{}",
+        "modelIncomplete": "false",
+        "shade": "clear"
+      },
+      "localTime": "02 — ПЕРЕДВИНЬТЕ СВЕТ\n18:00 UTC+01:00\n☀ 27.7° · ↗ 274°",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap",
+      "fallback": false,
+      "errors": [],
+      "bytes": 186450,
+      "sha256": "b275cdaf0b3044cd453263979f1309b34a92ad5b13e5d15dd5eba64654079e1c"
+    }
+  ]
+}

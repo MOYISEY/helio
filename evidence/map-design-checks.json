@@ -364,5 +364,130 @@
     "No physical-device, native Safari, screen-reader, FPS or battery benchmark claim.",
     "Source reference videos were not viewed by this reviewer.",
     "Public live QA is a separate deployment/regression audit."
-  ]
+  ],
+  "targetedVisualFollowup": {
+    "checkedAt": "2026-10-02T15:48:59.551Z",
+    "recordedAt": "2026-10-02T15:53:20.941Z",
+    "base": "http://127.0.0.1:5196/helio/",
+    "purpose": "One requested visual pass: cooler cast shadows, muted paint-only basemap,26px visible marker within44px target",
+    "assertions": 34,
+    "results": [
+      {
+        "width": 390,
+        "assertions": 17,
+        "passed": 17,
+        "errors": [],
+        "model": {
+          "parts": 134,
+          "incomplete": "false"
+        },
+        "marker": {
+          "width": 44,
+          "height": 44,
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "font": "18px",
+          "lineHeight": "44px",
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 152, 188)",
+          "pseudoOuterWidth": 26,
+          "pseudoOuterHeight": 26,
+          "pseudoPointerEvents": "none",
+          "ariaLabel": "Selected point. Drag to move; or use map centre."
+        },
+        "times": [
+          {
+            "parts": 134,
+            "incomplete": "false",
+            "shade": "clear",
+            "time": "08:00 UTC+01:00",
+            "angles": "☀ 27.0° · ↗ 86°"
+          },
+          {
+            "parts": 134,
+            "incomplete": "false",
+            "shade": "clear",
+            "time": "18:00 UTC+01:00",
+            "angles": "☀ 27.7° · ↗ 274°"
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "assertions": 17,
+        "passed": 17,
+        "errors": [],
+        "model": {
+          "parts": 134,
+          "incomplete": "false"
+        },
+        "marker": {
+          "width": 44,
+          "height": 44,
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "0px",
+          "font": "18px",
+          "lineHeight": "44px",
+          "position": "absolute",
+          "transform": "matrix(1, 0, 0, 1, 625, 248)",
+          "pseudoOuterWidth": 26,
+          "pseudoOuterHeight": 26,
+          "pseudoPointerEvents": "none",
+          "ariaLabel": "Selected point. Drag to move; or use map centre."
+        },
+        "times": [
+          {
+            "parts": 134,
+            "incomplete": "false",
+            "shade": "clear",
+            "time": "08:00 UTC+01:00",
+            "angles": "☀ 27.0° · ↗ 86°"
+          },
+          {
+            "parts": 134,
+            "incomplete": "false",
+            "shade": "clear",
+            "time": "18:00 UTC+01:00",
+            "angles": "☀ 27.7° · ↗ 274°"
+          }
+        ]
+      }
+    ],
+    "buildingGeometrySourceUnchanged": true,
+    "sourceSnapshotSha256": {
+      "src/App.tsx": "ebbefbece8496e8618ef9a257f460004f02ee6bc313b6a70170492db41c02c29",
+      "src/MapPanel.tsx": "18cdf4a82660942e65bd75f99f91fbc3ad98017fd7b1c0e7e5118ea0a44ea63e",
+      "src/ShadowLayer.ts": "c00cf95ef63fc7be6de414c264d4d5c5126b1de8f9524229eda9b872291abced",
+      "src/mapPalette.ts": "3bf7981fc8d84a8d4f613f35ad9bc8c3d1d6c134025f0eece4c6b3a6ecd142c9",
+      "src/buildings.ts": "90b6ee1eb32aea1024380abaf251f7171996f604820c9115899223346f5a39d6",
+      "src/map.css": "c6a62121e06e0eb2550735805ea47fef4781a63eebbdc9ef0d9223078fff4874",
+      "src/solar.ts": "35ccc0a6e6038d69cc2192ee940a98d3ce93f4d6bd2f3366f34104ed5bbab688",
+      "src/state.ts": "85a409a8e5e8cf67e322d45f190f54192ed48544d37920b087eb3ce64f9ff29d"
+    },
+    "buildSnapshotSha256": {
+      "docs/index.html": "adbb143cbf1a3680f74c4b5c4716a99805e72b4a8fc303b56f71503cb39da870",
+      "docs/assets/index-JU_mGNCl.js": "98a37a3fb4fa5be86c05526193491397c86c3e26830bc65e9dc3ceecdd8d4ff1",
+      "docs/assets/index-_qQQm9al.css": "e73bdb7790d187876d63843ed167b170bf8146d4ad0737f677b2f2e750aef4be",
+      "docs/assets/maplibre-gl-worker-CRiIRpYb.js": "096f3b4deeeaa7ed1372a96978bea3495b78250041df835fada34f12320e11d2",
+      "docs/assets/MapPanel-B8-mEBLf.css": "946f40662e206d3f7ecf6ef4df1881ff23819a9f93b1419a07e2609f70e7bbf4",
+      "docs/assets/MapPanel-rSv63p_v.js": "bc2181daebe78cdf419d0db257f1a2777a92c5cf58ac5f7deafd251e1d44e6af",
+      "docs/assets/Scene-BBPvs4Di.js": "d500a87b06c5c7a51a341b6f0487bd177134e770629a7ab8c4b245de00c2e792",
+      "docs/assets/three.module-hWLjphbp.js": "c6704dbb2e5e0055a89c166a1968082fc5c719a4acbbced70e20c4553cd2c5c1"
+    },
+    "privateReport": "qa-private/map-visual-followup/report.json",
+    "privateScript": "qa-private/map-visual-followup.mjs",
+    "privatePairedCaptures": [
+      "qa-private/map-visual-followup/390-08-map.png",
+      "qa-private/map-visual-followup/390-08-panel.png",
+      "qa-private/map-visual-followup/390-18-map.png",
+      "qa-private/map-visual-followup/390-18-panel.png",
+      "qa-private/map-visual-followup/1440-08-map.png",
+      "qa-private/map-visual-followup/1440-08-panel.png",
+      "qa-private/map-visual-followup/1440-18-map.png",
+      "qa-private/map-visual-followup/1440-18-panel.png"
+    ],
+    "numericalSuiteRerunByThisReviewer": false,
+    "previous125AssertionsRerunOnNewCandidate": false,
+    "publicLiveVerifiedByThisAgent": false
+  }
 }
