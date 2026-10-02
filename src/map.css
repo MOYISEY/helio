@@ -5,6 +5,9 @@
 /* Each map-stage section spans the editorial grid; only the lead copy and
    solar readout share the opening row. */
 .atlas-v2 .hero-copy{width:100%;min-width:0}
+.map-jump{display:inline-flex;align-items:center;gap:12px;min-height:44px;max-width:100%;margin-top:12px;padding:10px 0;color:#ffce9a;font-size:13px;line-height:1.5;text-decoration:underline;text-underline-offset:5px;pointer-events:auto;overflow-wrap:anywhere}
+.map-jump:hover{color:#f2eddd;text-underline-offset:7px}
+.map-jump span{font-size:18px;text-decoration:none;flex-shrink:0}
 .atlas-v2 .solar-readout{inset:auto;align-self:center}
 .atlas-v2 .atlas-modes,.atlas-v2 .city-search,.atlas-v2 .map-panel{grid-column:1/-1;min-width:0}
 .atlas-modes{align-items:flex-start}

@@ -83,3 +83,11 @@ test('shadow camera contains the full model, including500 m roofs at low sun',()
  for(const azimuth of [0,90,180,270])for(const altitude of [.1,10,45,89.9]){layer.setSun(azimuth,altitude);const camera=layer.light.shadow.camera,matrix=new THREE.Matrix4().multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse);for(const x of [layer.bounds.min.x,layer.bounds.max.x])for(const y of [layer.bounds.min.y,layer.bounds.max.y])for(const z of [layer.bounds.min.z,layer.bounds.max.z]){const p=new THREE.Vector3(x,y,z).applyMatrix4(matrix);assert.ok(Math.abs(p.x)<=1&&Math.abs(p.y)<=1&&Math.abs(p.z)<=1,`model clipped at azimuth${azimuth}/altitude${altitude}`);}}
  assert.equal(layer.setSun(NaN,45),'insufficient');assert.equal(layer.light.castShadow,false);assert.ok(layer.light.position.toArray().every(Number.isFinite));layer.onRemove();
 });
+test('inactive custom layer updates sunlight state without requesting map repaint',()=>{
+ const b=box(-1,5),layer=new ShadowLayer(model([b]),...origin);let repaint=0;layer.map={triggerRepaint(){repaint++;}} as unknown as NonNullable<ShadowLayer['map']>;
+ layer.active=false;assert.equal(layer.setSun(0,45),'shade');assert.equal(repaint,0);assert.equal(layer.azimuth,0);assert.equal(layer.altitude,45);assert.equal(layer.light.intensity,3);
+ layer.active=true;assert.equal(layer.setSun(180,45),'clear');assert.equal(repaint,1);layer.onRemove();
+});
+test('production extrusion assigns cream caps and darker walls without changing ray geometry',()=>{
+ const b=box(-1,5),layer=new ShadowLayer(model([b]),...origin),mesh=layer.meshes[0];assert.ok(Array.isArray(mesh.material));const material=mesh.material as THREE.MeshStandardMaterial[];assert.equal(material.length,2);assert.equal(material[0].color.getHex(),0xf3e4c8);assert.equal(material[1].color.getHex(),0xc8bca3);assert.deepEqual([...new Set(mesh.geometry.groups.map(g=>g.materialIndex))].sort(),[0,1]);assert.equal(layer.setSun(0,45),'shade');assert.equal(layer.setSun(180,45),'clear');layer.onRemove();
+});

@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-10-02T15:24:14.840Z",
+  "reviewer": "delegated Codex numerical/code audit agent",
+  "scope": [
+    "src/buildings.ts",
+    "src/ShadowLayer.ts",
+    "authored synthetic geometry tests"
+  ],
+  "checks": {
+    "combined": {
+      "command": "node --max-old-space-size=256 --experimental-strip-types --test tests/*.test.ts",
+      "exitCode": 0,
+      "tests": 36,
+      "pass": 36,
+      "fail": 0,
+      "skipped": 0,
+      "mapTests": 21,
+      "originalSolarTests": 15,
+      "durationMs": 549.8538,
+      "heapCeilingMb": 256,
+      "log": "qa-private/map-code/final-tests.txt"
+    },
+    "typecheck": {
+      "command": "npx tsc --noEmit",
+      "exitCode": 0,
+      "ranAfterFinalSourceChanges": true
+    },
+    "productionAdvisories": {
+      "command": "npm audit --omit=dev --json",
+      "exitCode": 0,
+      "vulnerabilities": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0,
+        "total": 0
+      },
+      "dependencies": {
+        "prod": 38,
+        "dev": 75,
+        "optional": 47,
+        "peer": 0,
+        "peerOptional": 0,
+        "total": 112
+      },
+      "log": "qa-private/map-code/npm-audit.json"
+    }
+  },
+  "sourceSha256": {
+    "src/buildings.ts": "99e3ab8a44f7a7556d88e35b2274b44b463eaeed8a7c5d9689f29f8669fbecd8",
+    "src/ShadowLayer.ts": "cb0d6441089fc2014f51ff4fd80364f0c9d575299c0cb50b8a88b2f3f13a10d9",
+    "tests/map-geometry.test.ts": "65c1009bb987e0b913fb27bb23f6f3ea9df6f975d6382be2dc9a90f4f11b4914",
+    "src/solar.ts": "35ccc0a6e6038d69cc2192ee940a98d3ce93f4d6bd2f3366f34104ed5bbab688",
+    "tests/numerical-audit.test.ts": "d28004e3215946c217ed55181d15bbab9d26ab66ede03a7a8f71511a5570acac"
+  },
+  "baselineUnchanged": true,
+  "guards": {
+    "halfSizeMeters": 150,
+    "outputParts": 240,
+    "outputVertices": 24000,
+    "scanFeatures": 10000,
+    "scanOuterPolygons": 50000,
+    "scanOuterVertices": 1000000,
+    "relevantInputVertices": 100000,
+    "ringVertices": 2048,
+    "featureVertices": 8192,
+    "relevantFeaturePolygons": 240,
+    "polygonRings": 128,
+    "groupFragments": 960,
+    "groupVertices": 24000,
+    "observerHeightMeters": 1.6
+  },
+  "confirmedFixes": [
+    "quadratic cyclic-ring allocation",
+    "malformed ring poisoning vertex budget",
+    "stable-ID and conservative absent-ID deduplication",
+    "far tile-fragment filtering before relevant caps",
+    "short dateline bounds",
+    "insufficient results for incomplete/invalid models",
+    "full tall-roof shadow camera frustum",
+    "supported PCFShadowMap and nonfinite solar containment",
+    "active repaint request gate"
+  ],
+  "preFixFailure": {
+    "input": "authored synthetic 30000-vertex ring",
+    "observed": "Node heap exhausted approximately 4 GB in 11.5 seconds before early guards",
+    "followup": "guarded tests use 256 MB ceiling; oversized input now rejected before canonicalization"
+  },
+  "reportedIntegration": {
+    "source": "implementation agent live DOM probe, not independently collected by this reviewer",
+    "parts": 134,
+    "vertices": 1358,
+    "skipped": 0,
+    "reasons": {},
+    "incomplete": false,
+    "shade": "clear"
+  },
+  "limits": [
+    "No tile corpus fetched or saved by this reviewer",
+    "All live provider heights remain estimates",
+    "Flat-ground Mercator square only; no terrain/trees/weather/outside-obstacle guarantee",
+    "Shared WebGL context reviewed in source; synthetic Node tests do not emulate GPU state",
+    "Public deployment, actual offscreen draw counts and physical-device QA belong to integration/live audit",
+    "Bounded clipping inputs may still be expensive on pathological intersection patterns"
+  ]
+}
