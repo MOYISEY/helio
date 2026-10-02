@@ -1,0 +1,132 @@
+{
+  "reviewer": "Independent delegated numerical/correctness/security agent",
+  "recordedAt": "2026-10-02T13:33:13.972Z",
+  "unitCommand": "node --experimental-strip-types --test tests/numerical-audit.test.ts",
+  "unitResult": {
+    "tests": 15,
+    "pass": 15,
+    "fail": 0
+  },
+  "oracle": {
+    "usno": {
+      "comparedAt": "2026-10-02T13:20:22.348Z",
+      "count": 768,
+      "maxErrorSeconds": 33.002,
+      "roundingBoundaryCases": [
+        {
+          "location": "Lima",
+          "date": "2026-01-03",
+          "id": "dusk",
+          "actual": "2026-01-02T23:59:54.352Z",
+          "explanation": "Whole-minute USNO midnight value rounds from preceding exact civil day; Helio correctly excludes it from selected day."
+        }
+      ],
+      "missing": 0,
+      "failures": 0
+    },
+    "jpl": {
+      "comparedAt": "2026-10-02T13:20:22.178Z",
+      "count": 728,
+      "maxAzimuthErrorDegrees": 0.026328484973191735,
+      "maxApparentAltitudeErrorDegrees": 0.17058934191111064
+    },
+    "provenance": {
+      "fixtureURL": "https://raw.githubusercontent.com/mourner/suncalc/v2.1.0/test/fixtures.json",
+      "fetchCodeURL": "https://raw.githubusercontent.com/mourner/suncalc/v2.1.0/test/fetch-truth.js",
+      "fixtureSHA256": "87abcce41e0a6aafdb00930a0d99627d066eeeb0fde2381d2868b8d9bd682e03",
+      "generated": "2026-06-17T17:39:51.096Z",
+      "retrieved": "2026-10-02",
+      "provenance": "USNO oneday (tz=0/UTC). sundata/moondata phen times \"HH:MM\"; civil twilight only.",
+      "note": "USNO-derived published data; current official API request failed ECONNRESET. These expected values were not calculated from Helio or SunCalc."
+    }
+  },
+  "runtime": {
+    "checkedAt": "2026-10-02T13:31:35.684Z",
+    "url": "http://127.0.0.1:5177/helio/",
+    "checks": [
+      {
+        "name": "No automatic storage writes",
+        "pass": true
+      },
+      {
+        "name": "25-hour DST day uses elapsed range and both 01:30 instants",
+        "pass": true
+      },
+      {
+        "name": "Actual JSON and ICS downloads retain selected absolute time and zone",
+        "pass": true
+      },
+      {
+        "name": "Every available event button jumps to its exact calculated instant",
+        "pass": true
+      },
+      {
+        "name": "Explicit save, restore and delete work without implicit writes",
+        "pass": true
+      },
+      {
+        "name": "Invalid zone leaves the current plan and gives feedback",
+        "pass": true
+      },
+      {
+        "name": "Manual coordinates reject out-of-range input, then stay local",
+        "pass": true
+      },
+      {
+        "name": "Polar night events and jumps retain twilight",
+        "pass": true
+      },
+      {
+        "name": "Now and previous/next day update date and keep the range bounded",
+        "pass": true
+      },
+      {
+        "name": "3D compass headings, follow mode, 2D fallback and language toggle respond",
+        "pass": true
+      },
+      {
+        "name": "Normal runtime and custom coordinates make no third-party requests",
+        "pass": true
+      },
+      {
+        "name": "Malformed saved JSON produces feedback and remains removable",
+        "pass": true
+      },
+      {
+        "name": "Malformed URL recovers and DST gap URL reports feedback",
+        "pass": true
+      },
+      {
+        "name": "Storage denied keeps planner usable and provides feedback",
+        "pass": true
+      },
+      {
+        "name": "No JavaScript page errors during executed flows",
+        "pass": true
+      }
+    ],
+    "errors": [],
+    "thirdPartyRequestCount": 0,
+    "requestCount": 112
+  },
+  "productionAudit": {
+    "command": "npm audit --omit=dev --json",
+    "date": "2026-10-02",
+    "reportedVulnerabilities": 0
+  },
+  "auditedNumericalFiles": [
+    {
+      "file": "src/solar.ts",
+      "sha256": "35ccc0a6e6038d69cc2192ee940a98d3ce93f4d6bd2f3366f34104ed5bbab688"
+    },
+    {
+      "file": "src/state.ts",
+      "sha256": "85a409a8e5e8cf67e322d45f190f54192ed48544d37920b087eb3ce64f9ff29d"
+    },
+    {
+      "file": "src/export.ts",
+      "sha256": "c40ec987857a185a8b512c9819bba3b258433f8ba948c9a726d5ce8009424579"
+    }
+  ],
+  "scope": "Local current-source Chromium QA only. No public/live deployment audited by this reviewer; no scientific pixel-angle calibration or weather/terrain prediction."
+}

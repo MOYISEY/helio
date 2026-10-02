@@ -1,0 +1,4 @@
+@media(min-width:601px) and (max-width:900px){.world{height:800px}}
+@media(max-width:600px){.world{inset:240px -38% auto;height:440px}}
+.fallback-directions{position:absolute;z-index:1;left:4%;right:4%;bottom:12%;display:flex;justify-content:space-between;font-size:12px;color:#c2ccde}
+@media(max-width:600px){.world:has(.fallback){inset:270px 0 auto;height:320px}.fallback-directions{bottom:12%;font-size:12px}}

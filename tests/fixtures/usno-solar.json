@@ -1,0 +1,3919 @@
+{
+  "source": {
+    "fixtureURL": "https://raw.githubusercontent.com/mourner/suncalc/v2.1.0/test/fixtures.json",
+    "fetchCodeURL": "https://raw.githubusercontent.com/mourner/suncalc/v2.1.0/test/fetch-truth.js",
+    "fixtureSHA256": "87abcce41e0a6aafdb00930a0d99627d066eeeb0fde2381d2868b8d9bd682e03",
+    "generated": "2026-06-17T17:39:51.096Z",
+    "retrieved": "2026-10-02",
+    "provenance": "USNO oneday (tz=0/UTC). sundata/moondata phen times \"HH:MM\"; civil twilight only.",
+    "note": "USNO-derived published data; current official API request failed ECONNRESET. These expected values were not calculated from Helio or SunCalc."
+  },
+  "locations": [
+    {
+      "name": "Longyearbyen",
+      "lat": 78.22334,
+      "lng": 15.64689
+    },
+    {
+      "name": "Tromsø",
+      "lat": 69.6489,
+      "lng": 18.95508
+    },
+    {
+      "name": "Reykjavík",
+      "lat": 64.13548,
+      "lng": -21.89541
+    },
+    {
+      "name": "Stockholm",
+      "lat": 59.32938,
+      "lng": 18.06871
+    },
+    {
+      "name": "Kyiv",
+      "lat": 50.45466,
+      "lng": 30.5238
+    },
+    {
+      "name": "Istanbul",
+      "lat": 41.01384,
+      "lng": 28.94966
+    },
+    {
+      "name": "Shanghai",
+      "lat": 31.22222,
+      "lng": 121.45806
+    },
+    {
+      "name": "Bogotá",
+      "lat": 4.60971,
+      "lng": -74.08175
+    },
+    {
+      "name": "Kinshasa",
+      "lat": -4.32758,
+      "lng": 15.31357
+    },
+    {
+      "name": "Lima",
+      "lat": -12.04318,
+      "lng": -77.02824
+    },
+    {
+      "name": "Buenos Aires",
+      "lat": -34.61315,
+      "lng": -58.37723
+    },
+    {
+      "name": "Melbourne",
+      "lat": -37.814,
+      "lng": 144.96332
+    },
+    {
+      "name": "Ushuaia",
+      "lat": -54.81084,
+      "lng": -68.31591
+    },
+    {
+      "name": "McMurdo Station",
+      "lat": -77.846,
+      "lng": 166.676
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-01-03",
+      "label": "perihelion (Sun nearest); also full moon"
+    },
+    {
+      "date": "2026-01-10",
+      "label": "moon last quarter"
+    },
+    {
+      "date": "2026-01-18",
+      "label": "new moon"
+    },
+    {
+      "date": "2026-01-25",
+      "label": "moon first quarter"
+    },
+    {
+      "date": "2026-03-20",
+      "label": "March equinox"
+    },
+    {
+      "date": "2026-06-01",
+      "label": "lunar apogee (moon farthest, ~406,369 km)"
+    },
+    {
+      "date": "2026-06-21",
+      "label": "June solstice (max polar day/night contrast)"
+    },
+    {
+      "date": "2026-07-06",
+      "label": "aphelion (Sun farthest)"
+    },
+    {
+      "date": "2026-09-23",
+      "label": "September equinox"
+    },
+    {
+      "date": "2026-12-21",
+      "label": "December solstice"
+    },
+    {
+      "date": "2026-12-24",
+      "label": "lunar perigee / supermoon (moon nearest)"
+    },
+    {
+      "date": "1950-06-21",
+      "label": "historical solstice (small dT, exercises dT model)"
+    },
+    {
+      "date": "2050-06-21",
+      "label": "future solstice (large dT, exercises dT model)"
+    }
+  ],
+  "times": {
+    "Longyearbyen": {
+      "2026-01-03": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "03:06"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:52"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:05"
+        },
+        {
+          "phen": "Set",
+          "time": "17:22"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "19:10"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:55"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:55"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:59"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:59"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:02"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "23:02"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "02:48"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:35"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:50"
+        },
+        {
+          "phen": "Set",
+          "time": "17:01"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:46"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:59"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:59"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:59"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:59"
+        }
+      ]
+    },
+    "Tromsø": {
+      "2026-01-03": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:24"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "13:14"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:10"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "13:34"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "07:48"
+        },
+        {
+          "phen": "Rise",
+          "time": "09:52"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:55"
+        },
+        {
+          "phen": "Set",
+          "time": "11:58"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:02"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "07:26"
+        },
+        {
+          "phen": "Rise",
+          "time": "09:03"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:56"
+        },
+        {
+          "phen": "Set",
+          "time": "12:51"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:28"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "03:44"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:44"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:52"
+        },
+        {
+          "phen": "Set",
+          "time": "17:02"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:02"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:42"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:42"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:46"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:46"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:49"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:49"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "03:27"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:28"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:37"
+        },
+        {
+          "phen": "Set",
+          "time": "16:43"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:43"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:31"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "12:53"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:32"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "12:55"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:46"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:46"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:46"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "22:46"
+        }
+      ]
+    },
+    "Reykjavík": {
+      "2026-01-03": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:02"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:17"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:32"
+        },
+        {
+          "phen": "Set",
+          "time": "15:48"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:03"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "09:55"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:05"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:35"
+        },
+        {
+          "phen": "Set",
+          "time": "16:05"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:16"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "09:42"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:47"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:38"
+        },
+        {
+          "phen": "Set",
+          "time": "16:29"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:35"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "09:28"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:28"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:40"
+        },
+        {
+          "phen": "Set",
+          "time": "16:52"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:53"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:41"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:28"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:35"
+        },
+        {
+          "phen": "Set",
+          "time": "19:43"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "20:31"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Rise",
+          "time": "03:23"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:25"
+        },
+        {
+          "phen": "Set",
+          "time": "23:30"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Set",
+          "time": "00:03"
+        },
+        {
+          "phen": "Rise",
+          "time": "02:55"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:29"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Rise",
+          "time": "03:17"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:32"
+        },
+        {
+          "phen": "Set",
+          "time": "23:46"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:25"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:13"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:20"
+        },
+        {
+          "phen": "Set",
+          "time": "19:25"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "20:12"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:03"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:22"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:26"
+        },
+        {
+          "phen": "Set",
+          "time": "15:29"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "16:49"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:04"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:23"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:27"
+        },
+        {
+          "phen": "Set",
+          "time": "15:32"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "16:51"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Set",
+          "time": "00:03"
+        },
+        {
+          "phen": "Rise",
+          "time": "02:55"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:29"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Set",
+          "time": "00:03"
+        },
+        {
+          "phen": "Rise",
+          "time": "02:56"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "13:30"
+        }
+      ]
+    },
+    "Stockholm": {
+      "2026-01-03": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:49"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:43"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:52"
+        },
+        {
+          "phen": "Set",
+          "time": "14:02"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:56"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:44"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:37"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:55"
+        },
+        {
+          "phen": "Set",
+          "time": "14:14"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:07"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:36"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:26"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:58"
+        },
+        {
+          "phen": "Set",
+          "time": "14:31"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:21"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:25"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:13"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:00"
+        },
+        {
+          "phen": "Set",
+          "time": "14:48"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:36"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:09"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:50"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:55"
+        },
+        {
+          "phen": "Set",
+          "time": "17:02"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:43"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "00:27"
+        },
+        {
+          "phen": "Rise",
+          "time": "01:44"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:46"
+        },
+        {
+          "phen": "Set",
+          "time": "19:49"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:06"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Rise",
+          "time": "01:31"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:50"
+        },
+        {
+          "phen": "Set",
+          "time": "20:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:40"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "23:59"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "00:20"
+        },
+        {
+          "phen": "Rise",
+          "time": "01:43"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:53"
+        },
+        {
+          "phen": "Set",
+          "time": "20:01"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:23"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "03:53"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:34"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:40"
+        },
+        {
+          "phen": "Set",
+          "time": "16:45"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:25"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:48"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:43"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:46"
+        },
+        {
+          "phen": "Set",
+          "time": "13:48"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:44"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:49"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:45"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:47"
+        },
+        {
+          "phen": "Set",
+          "time": "13:50"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:46"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Rise",
+          "time": "01:31"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:49"
+        },
+        {
+          "phen": "Set",
+          "time": "20:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:40"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "23:59"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Rise",
+          "time": "01:31"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:50"
+        },
+        {
+          "phen": "Set",
+          "time": "20:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:40"
+        }
+      ]
+    },
+    "Kyiv": {
+      "2026-01-03": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "05:20"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:58"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:02"
+        },
+        {
+          "phen": "Set",
+          "time": "14:07"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:45"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "05:18"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:56"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:05"
+        },
+        {
+          "phen": "Set",
+          "time": "14:15"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:53"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "05:13"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:50"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:08"
+        },
+        {
+          "phen": "Set",
+          "time": "14:27"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:04"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "05:06"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:42"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:10"
+        },
+        {
+          "phen": "Set",
+          "time": "14:39"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:15"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "03:29"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:01"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:05"
+        },
+        {
+          "phen": "Set",
+          "time": "16:11"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "16:43"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "01:08"
+        },
+        {
+          "phen": "Rise",
+          "time": "01:52"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "09:56"
+        },
+        {
+          "phen": "Set",
+          "time": "18:00"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:44"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "01:01"
+        },
+        {
+          "phen": "Rise",
+          "time": "01:46"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:00"
+        },
+        {
+          "phen": "Set",
+          "time": "18:13"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:59"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "01:10"
+        },
+        {
+          "phen": "Rise",
+          "time": "01:54"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:03"
+        },
+        {
+          "phen": "Set",
+          "time": "18:11"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:55"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "03:13"
+        },
+        {
+          "phen": "Rise",
+          "time": "03:45"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "09:50"
+        },
+        {
+          "phen": "Set",
+          "time": "15:54"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "16:27"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "05:17"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:56"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "09:56"
+        },
+        {
+          "phen": "Set",
+          "time": "13:56"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:35"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "05:18"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:57"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "09:57"
+        },
+        {
+          "phen": "Set",
+          "time": "13:58"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "14:37"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "01:00"
+        },
+        {
+          "phen": "Rise",
+          "time": "01:46"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "09:59"
+        },
+        {
+          "phen": "Set",
+          "time": "18:13"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:59"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "01:01"
+        },
+        {
+          "phen": "Rise",
+          "time": "01:46"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:00"
+        },
+        {
+          "phen": "Set",
+          "time": "18:13"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:59"
+        }
+      ]
+    },
+    "Istanbul": {
+      "2026-01-03": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:58"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:29"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:09"
+        },
+        {
+          "phen": "Set",
+          "time": "14:48"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:19"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:58"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:29"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:12"
+        },
+        {
+          "phen": "Set",
+          "time": "14:55"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:26"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:56"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:26"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:15"
+        },
+        {
+          "phen": "Set",
+          "time": "15:04"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:34"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:52"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:21"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:16"
+        },
+        {
+          "phen": "Set",
+          "time": "15:12"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:42"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "03:41"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:08"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:12"
+        },
+        {
+          "phen": "Set",
+          "time": "16:16"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "16:44"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "02:02"
+        },
+        {
+          "phen": "Rise",
+          "time": "02:34"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:02"
+        },
+        {
+          "phen": "Set",
+          "time": "17:30"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:03"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "01:58"
+        },
+        {
+          "phen": "Rise",
+          "time": "02:32"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:06"
+        },
+        {
+          "phen": "Set",
+          "time": "17:40"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:14"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "02:05"
+        },
+        {
+          "phen": "Rise",
+          "time": "02:39"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:09"
+        },
+        {
+          "phen": "Set",
+          "time": "17:39"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:12"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "03:25"
+        },
+        {
+          "phen": "Rise",
+          "time": "03:53"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "09:57"
+        },
+        {
+          "phen": "Set",
+          "time": "16:00"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "16:27"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:54"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:26"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:02"
+        },
+        {
+          "phen": "Set",
+          "time": "14:39"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:10"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:56"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:27"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:04"
+        },
+        {
+          "phen": "Set",
+          "time": "14:41"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "15:12"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "01:58"
+        },
+        {
+          "phen": "Rise",
+          "time": "02:32"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:06"
+        },
+        {
+          "phen": "Set",
+          "time": "17:40"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:13"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "01:59"
+        },
+        {
+          "phen": "Rise",
+          "time": "02:32"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:06"
+        },
+        {
+          "phen": "Set",
+          "time": "17:40"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "18:14"
+        }
+      ]
+    },
+    "Shanghai": {
+      "2026-01-03": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:59"
+        },
+        {
+          "phen": "Set",
+          "time": "09:04"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "09:31"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "22:27"
+        },
+        {
+          "phen": "Rise",
+          "time": "22:53"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Upper Transit",
+          "time": "04:02"
+        },
+        {
+          "phen": "Set",
+          "time": "09:09"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "09:36"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "22:27"
+        },
+        {
+          "phen": "Rise",
+          "time": "22:54"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Upper Transit",
+          "time": "04:04"
+        },
+        {
+          "phen": "Set",
+          "time": "09:16"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "09:42"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "22:26"
+        },
+        {
+          "phen": "Rise",
+          "time": "22:53"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Upper Transit",
+          "time": "04:06"
+        },
+        {
+          "phen": "Set",
+          "time": "09:23"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "09:48"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "22:24"
+        },
+        {
+          "phen": "Rise",
+          "time": "22:50"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Upper Transit",
+          "time": "04:02"
+        },
+        {
+          "phen": "Set",
+          "time": "10:05"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "10:30"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "21:33"
+        },
+        {
+          "phen": "Rise",
+          "time": "21:57"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:52"
+        },
+        {
+          "phen": "Set",
+          "time": "10:53"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "11:21"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "20:23"
+        },
+        {
+          "phen": "Rise",
+          "time": "20:51"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:56"
+        },
+        {
+          "phen": "Set",
+          "time": "11:01"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "11:29"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "20:23"
+        },
+        {
+          "phen": "Rise",
+          "time": "20:51"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:59"
+        },
+        {
+          "phen": "Set",
+          "time": "11:02"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "11:30"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "20:28"
+        },
+        {
+          "phen": "Rise",
+          "time": "20:56"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:47"
+        },
+        {
+          "phen": "Set",
+          "time": "09:50"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "10:14"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "21:19"
+        },
+        {
+          "phen": "Rise",
+          "time": "21:43"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:52"
+        },
+        {
+          "phen": "Set",
+          "time": "08:56"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "09:22"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "22:22"
+        },
+        {
+          "phen": "Rise",
+          "time": "22:49"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:54"
+        },
+        {
+          "phen": "Set",
+          "time": "08:57"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "09:24"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "22:24"
+        },
+        {
+          "phen": "Rise",
+          "time": "22:50"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:56"
+        },
+        {
+          "phen": "Set",
+          "time": "11:01"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "11:29"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "20:22"
+        },
+        {
+          "phen": "Rise",
+          "time": "20:50"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Upper Transit",
+          "time": "03:56"
+        },
+        {
+          "phen": "Set",
+          "time": "11:01"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "11:29"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "20:23"
+        },
+        {
+          "phen": "Rise",
+          "time": "20:51"
+        }
+      ]
+    },
+    "Bogotá": {
+      "2026-01-03": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:42"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:05"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:01"
+        },
+        {
+          "phen": "Set",
+          "time": "22:57"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:19"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:45"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:08"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:04"
+        },
+        {
+          "phen": "Set",
+          "time": "23:00"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:23"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:48"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:10"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:07"
+        },
+        {
+          "phen": "Set",
+          "time": "23:04"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:26"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:50"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:11"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:09"
+        },
+        {
+          "phen": "Set",
+          "time": "23:06"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:28"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:40"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:00"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:04"
+        },
+        {
+          "phen": "Set",
+          "time": "23:07"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:28"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:21"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:43"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:54"
+        },
+        {
+          "phen": "Set",
+          "time": "23:05"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:28"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:24"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:47"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:58"
+        },
+        {
+          "phen": "Set",
+          "time": "23:10"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:33"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:27"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:50"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:01"
+        },
+        {
+          "phen": "Set",
+          "time": "23:12"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:35"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:25"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:45"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:49"
+        },
+        {
+          "phen": "Set",
+          "time": "22:52"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:12"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:36"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:59"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:54"
+        },
+        {
+          "phen": "Set",
+          "time": "22:50"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:13"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:38"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:00"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:56"
+        },
+        {
+          "phen": "Set",
+          "time": "22:52"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:14"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:24"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:46"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:58"
+        },
+        {
+          "phen": "Set",
+          "time": "23:10"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:32"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:24"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:47"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:58"
+        },
+        {
+          "phen": "Set",
+          "time": "23:10"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:33"
+        }
+      ]
+    },
+    "Kinshasa": {
+      "2026-01-03": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:30"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:52"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:03"
+        },
+        {
+          "phen": "Set",
+          "time": "17:14"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:37"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:33"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:56"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:06"
+        },
+        {
+          "phen": "Set",
+          "time": "17:17"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:39"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:37"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:59"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:09"
+        },
+        {
+          "phen": "Set",
+          "time": "17:19"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:41"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:40"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:01"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:11"
+        },
+        {
+          "phen": "Set",
+          "time": "17:21"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:42"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:42"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:03"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:06"
+        },
+        {
+          "phen": "Set",
+          "time": "17:09"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:30"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:38"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:00"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:57"
+        },
+        {
+          "phen": "Set",
+          "time": "16:53"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:16"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:42"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:04"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:01"
+        },
+        {
+          "phen": "Set",
+          "time": "16:57"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:19"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:45"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:07"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:04"
+        },
+        {
+          "phen": "Set",
+          "time": "17:00"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:22"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:27"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:48"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:51"
+        },
+        {
+          "phen": "Set",
+          "time": "16:54"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:15"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:23"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:45"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:57"
+        },
+        {
+          "phen": "Set",
+          "time": "17:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:31"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:24"
+        },
+        {
+          "phen": "Rise",
+          "time": "04:47"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "10:58"
+        },
+        {
+          "phen": "Set",
+          "time": "17:10"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:32"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:42"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:04"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:00"
+        },
+        {
+          "phen": "Set",
+          "time": "16:56"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:19"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "04:42"
+        },
+        {
+          "phen": "Rise",
+          "time": "05:04"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "11:01"
+        },
+        {
+          "phen": "Set",
+          "time": "16:57"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "17:19"
+        }
+      ]
+    },
+    "Lima": {
+      "2026-01-03": [
+        {
+          "phen": "End Civil Twilight",
+          "time": "00:00"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:25"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:48"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:13"
+        },
+        {
+          "phen": "Set",
+          "time": "23:37"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "End Civil Twilight",
+          "time": "00:02"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:29"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:52"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:16"
+        },
+        {
+          "phen": "Set",
+          "time": "23:39"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "End Civil Twilight",
+          "time": "00:03"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:34"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:57"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:19"
+        },
+        {
+          "phen": "Set",
+          "time": "23:41"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "End Civil Twilight",
+          "time": "00:03"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:38"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:00"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:20"
+        },
+        {
+          "phen": "Set",
+          "time": "23:41"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:51"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:12"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:15"
+        },
+        {
+          "phen": "Set",
+          "time": "23:19"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:40"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:59"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:22"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:06"
+        },
+        {
+          "phen": "Set",
+          "time": "22:50"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:13"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "11:04"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:27"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:10"
+        },
+        {
+          "phen": "Set",
+          "time": "22:53"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:16"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "11:07"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:30"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:13"
+        },
+        {
+          "phen": "Set",
+          "time": "22:56"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:19"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:36"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:57"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:00"
+        },
+        {
+          "phen": "Set",
+          "time": "23:04"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:25"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:18"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:41"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:06"
+        },
+        {
+          "phen": "Set",
+          "time": "23:31"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:55"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:19"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:43"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:08"
+        },
+        {
+          "phen": "Set",
+          "time": "23:33"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:56"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "11:04"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:27"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:10"
+        },
+        {
+          "phen": "Set",
+          "time": "22:52"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:15"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "11:05"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:28"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "17:10"
+        },
+        {
+          "phen": "Set",
+          "time": "22:53"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:16"
+        }
+      ]
+    },
+    "Buenos Aires": {
+      "2026-01-03": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:17"
+        },
+        {
+          "phen": "Rise",
+          "time": "08:46"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:58"
+        },
+        {
+          "phen": "Set",
+          "time": "23:10"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:39"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:23"
+        },
+        {
+          "phen": "Rise",
+          "time": "08:52"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:01"
+        },
+        {
+          "phen": "Set",
+          "time": "23:10"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:39"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:31"
+        },
+        {
+          "phen": "Rise",
+          "time": "09:00"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:04"
+        },
+        {
+          "phen": "Set",
+          "time": "23:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:36"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:39"
+        },
+        {
+          "phen": "Rise",
+          "time": "09:07"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:06"
+        },
+        {
+          "phen": "Set",
+          "time": "23:05"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:32"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "09:32"
+        },
+        {
+          "phen": "Rise",
+          "time": "09:57"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:01"
+        },
+        {
+          "phen": "Set",
+          "time": "22:05"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "22:30"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:24"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:52"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:51"
+        },
+        {
+          "phen": "Set",
+          "time": "20:51"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:18"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:32"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:00"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:55"
+        },
+        {
+          "phen": "Set",
+          "time": "20:50"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:18"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:33"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:01"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:58"
+        },
+        {
+          "phen": "Set",
+          "time": "20:56"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:24"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "09:16"
+        },
+        {
+          "phen": "Rise",
+          "time": "09:41"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:46"
+        },
+        {
+          "phen": "Set",
+          "time": "21:51"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "22:16"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:08"
+        },
+        {
+          "phen": "Rise",
+          "time": "08:37"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:52"
+        },
+        {
+          "phen": "Set",
+          "time": "23:06"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:36"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "08:09"
+        },
+        {
+          "phen": "Rise",
+          "time": "08:39"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:53"
+        },
+        {
+          "phen": "Set",
+          "time": "23:07"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:37"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:32"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:00"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:55"
+        },
+        {
+          "phen": "Set",
+          "time": "20:50"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:18"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "10:32"
+        },
+        {
+          "phen": "Rise",
+          "time": "11:00"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "15:55"
+        },
+        {
+          "phen": "Set",
+          "time": "20:50"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:19"
+        }
+      ]
+    },
+    "Melbourne": {
+      "2026-01-03": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:24"
+        },
+        {
+          "phen": "Set",
+          "time": "09:46"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "10:17"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "18:33"
+        },
+        {
+          "phen": "Rise",
+          "time": "19:04"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:27"
+        },
+        {
+          "phen": "Set",
+          "time": "09:45"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "10:16"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "18:40"
+        },
+        {
+          "phen": "Rise",
+          "time": "19:10"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:30"
+        },
+        {
+          "phen": "Set",
+          "time": "09:43"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "10:13"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "18:49"
+        },
+        {
+          "phen": "Rise",
+          "time": "19:19"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:32"
+        },
+        {
+          "phen": "Set",
+          "time": "09:39"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "10:08"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "18:57"
+        },
+        {
+          "phen": "Rise",
+          "time": "19:27"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:28"
+        },
+        {
+          "phen": "Set",
+          "time": "08:32"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "08:58"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "19:57"
+        },
+        {
+          "phen": "Rise",
+          "time": "20:24"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:18"
+        },
+        {
+          "phen": "Set",
+          "time": "07:09"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "07:38"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "20:58"
+        },
+        {
+          "phen": "Rise",
+          "time": "21:27"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:22"
+        },
+        {
+          "phen": "Set",
+          "time": "07:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "07:38"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "21:06"
+        },
+        {
+          "phen": "Rise",
+          "time": "21:36"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:25"
+        },
+        {
+          "phen": "Set",
+          "time": "07:14"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "07:43"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "21:06"
+        },
+        {
+          "phen": "Rise",
+          "time": "21:36"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:13"
+        },
+        {
+          "phen": "Set",
+          "time": "08:17"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "08:43"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "19:41"
+        },
+        {
+          "phen": "Rise",
+          "time": "20:07"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:18"
+        },
+        {
+          "phen": "Set",
+          "time": "09:42"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "10:13"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "18:23"
+        },
+        {
+          "phen": "Rise",
+          "time": "18:55"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:19"
+        },
+        {
+          "phen": "Set",
+          "time": "09:43"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "10:14"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "18:25"
+        },
+        {
+          "phen": "Rise",
+          "time": "18:56"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:22"
+        },
+        {
+          "phen": "Set",
+          "time": "07:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "07:37"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "21:06"
+        },
+        {
+          "phen": "Rise",
+          "time": "21:36"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Upper Transit",
+          "time": "02:22"
+        },
+        {
+          "phen": "Set",
+          "time": "07:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "07:38"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "21:06"
+        },
+        {
+          "phen": "Rise",
+          "time": "21:36"
+        }
+      ]
+    },
+    "Ushuaia": {
+      "2026-01-03": [
+        {
+          "phen": "Set",
+          "time": "01:12"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "02:08"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "07:08"
+        },
+        {
+          "phen": "Rise",
+          "time": "08:03"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:38"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Set",
+          "time": "01:08"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "02:01"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "07:20"
+        },
+        {
+          "phen": "Rise",
+          "time": "08:14"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:41"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Set",
+          "time": "01:00"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "01:50"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "07:38"
+        },
+        {
+          "phen": "Rise",
+          "time": "08:28"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:44"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Set",
+          "time": "00:50"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "01:37"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "07:55"
+        },
+        {
+          "phen": "Rise",
+          "time": "08:42"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:46"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "09:58"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:35"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:41"
+        },
+        {
+          "phen": "Set",
+          "time": "22:46"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:22"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "12:00"
+        },
+        {
+          "phen": "Rise",
+          "time": "12:44"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:31"
+        },
+        {
+          "phen": "Set",
+          "time": "20:18"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:01"
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "12:14"
+        },
+        {
+          "phen": "Rise",
+          "time": "12:59"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:35"
+        },
+        {
+          "phen": "Set",
+          "time": "20:11"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "20:57"
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "12:11"
+        },
+        {
+          "phen": "Rise",
+          "time": "12:56"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:38"
+        },
+        {
+          "phen": "Set",
+          "time": "20:21"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "21:05"
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "09:43"
+        },
+        {
+          "phen": "Rise",
+          "time": "10:19"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:26"
+        },
+        {
+          "phen": "Set",
+          "time": "22:33"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "23:09"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Set",
+          "time": "01:11"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "02:08"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:54"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:51"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:31"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Set",
+          "time": "01:12"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "02:10"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "06:56"
+        },
+        {
+          "phen": "Rise",
+          "time": "07:53"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:33"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "12:13"
+        },
+        {
+          "phen": "Rise",
+          "time": "12:59"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:35"
+        },
+        {
+          "phen": "Set",
+          "time": "20:11"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "20:56"
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "12:14"
+        },
+        {
+          "phen": "Rise",
+          "time": "12:59"
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "16:35"
+        },
+        {
+          "phen": "Set",
+          "time": "20:11"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "20:57"
+        }
+      ]
+    },
+    "McMurdo Station": {
+      "2026-01-03": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "00:58"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "12:58"
+        }
+      ],
+      "2026-01-10": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "01:01"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "13:01"
+        }
+      ],
+      "2026-01-18": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "01:04"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "13:04"
+        }
+      ],
+      "2026-01-25": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "01:05"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "13:06"
+        }
+      ],
+      "2026-03-20": [
+        {
+          "phen": "Upper Transit",
+          "time": "01:01"
+        },
+        {
+          "phen": "Set",
+          "time": "07:19"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "09:02"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "17:02"
+        },
+        {
+          "phen": "Rise",
+          "time": "18:46"
+        }
+      ],
+      "2026-06-01": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2026-06-21": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2026-07-06": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2026-09-23": [
+        {
+          "phen": "Upper Transit",
+          "time": "00:46"
+        },
+        {
+          "phen": "Set",
+          "time": "07:04"
+        },
+        {
+          "phen": "End Civil Twilight",
+          "time": "08:48"
+        },
+        {
+          "phen": "Begin Civil Twilight",
+          "time": "16:41"
+        },
+        {
+          "phen": "Rise",
+          "time": "18:24"
+        }
+      ],
+      "2026-12-21": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "00:51"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "12:51"
+        }
+      ],
+      "2026-12-24": [
+        {
+          "phen": "Object continuously above the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously above the Twilight Limit",
+          "time": null
+        },
+        {
+          "phen": "Upper Transit",
+          "time": "00:53"
+        },
+        {
+          "phen": "Lower Transit",
+          "time": "12:53"
+        }
+      ],
+      "1950-06-21": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ],
+      "2050-06-21": [
+        {
+          "phen": "Object continuously below the Horizon",
+          "time": null
+        },
+        {
+          "phen": "Object continuously below the Twilight Limit",
+          "time": null
+        }
+      ]
+    }
+  }
+}
