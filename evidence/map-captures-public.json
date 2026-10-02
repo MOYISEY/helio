@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-02T16:00:12.775Z",
+  "commit": "ecd774d93f51cc00eaf5c05533cf7c01e77d0977",
+  "verifiedThrough": "GitHub contents API",
+  "results": [
+    {
+      "path": "evidence/screenshots-map-final/desktop-morning-map.png",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/desktop-morning-map.png",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/desktop-morning-map.png",
+      "status": 200,
+      "bytes": 645677,
+      "sha256": "e0974dfa7e2140a3c44c20073fc4a68795afa322230fe49ea61c079be23a8484",
+      "identical": true
+    },
+    {
+      "path": "evidence/screenshots-map-final/desktop-morning-panel.png",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/desktop-morning-panel.png",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/desktop-morning-panel.png",
+      "status": 200,
+      "bytes": 714385,
+      "sha256": "8af67778c73a62eb8b24e89a107829aeb559823fc319be9b52bcb2d97bfbe06c",
+      "identical": true
+    },
+    {
+      "path": "evidence/screenshots-map-final/desktop-evening-map.png",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/desktop-evening-map.png",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/desktop-evening-map.png",
+      "status": 200,
+      "bytes": 646321,
+      "sha256": "4816f564bfcacd4ab421aba40f9c4c923dc957db4477bc7cbcbb4597e8e839f4",
+      "identical": true
+    },
+    {
+      "path": "evidence/screenshots-map-final/desktop-evening-panel.png",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/desktop-evening-panel.png",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/desktop-evening-panel.png",
+      "status": 200,
+      "bytes": 713686,
+      "sha256": "cca5596053afba6d385d485a45782d6b1b6d471b2f2af2adffd505967805b1fe",
+      "identical": true
+    },
+    {
+      "path": "evidence/screenshots-map-final/mobile-morning-map.png",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/mobile-morning-map.png",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/mobile-morning-map.png",
+      "status": 200,
+      "bytes": 157112,
+      "sha256": "b9cc53840d78b064483a4d498fe65703ed40238c9748265cfa71f1dd22dafe85",
+      "identical": true
+    },
+    {
+      "path": "evidence/screenshots-map-final/mobile-morning-panel.png",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/mobile-morning-panel.png",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/mobile-morning-panel.png",
+      "status": 200,
+      "bytes": 187050,
+      "sha256": "288b3c0c38aaaa3b99511cf34701ce6216fcd22221c1bd5af9830a02fe6aa61a",
+      "identical": true
+    },
+    {
+      "path": "evidence/screenshots-map-final/mobile-evening-map.png",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/mobile-evening-map.png",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/mobile-evening-map.png",
+      "status": 200,
+      "bytes": 156611,
+      "sha256": "7352063be800af5c154fd4f16ca0ee4cdf8d5e5ab4dd8d0e89bfeebc177c9b46",
+      "identical": true
+    },
+    {
+      "path": "evidence/screenshots-map-final/mobile-evening-panel.png",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/mobile-evening-panel.png",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/mobile-evening-panel.png",
+      "status": 200,
+      "bytes": 186450,
+      "sha256": "b275cdaf0b3044cd453263979f1309b34a92ad5b13e5d15dd5eba64654079e1c",
+      "identical": true
+    },
+    {
+      "path": "evidence/screenshots-map-final/manifest.json",
+      "url": "https://github.com/MOYISEY/helio/blob/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/manifest.json",
+      "downloadUrl": "https://raw.githubusercontent.com/MOYISEY/helio/ecd774d93f51cc00eaf5c05533cf7c01e77d0977/evidence/screenshots-map-final/manifest.json",
+      "status": 200,
+      "bytes": 11239,
+      "sha256": "f4437ae49b475d5b1d41bca4a2cad2cffe42ab5a2f46bcb6fa8666fab9e75ca7",
+      "identical": true
+    }
+  ]
+}

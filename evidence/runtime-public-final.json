@@ -1,0 +1,177 @@
+{
+  "at": "2026-10-02T15:56:45.151Z",
+  "commit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+  "url": "https://moyisey.github.io/helio/",
+  "scope": "All committed production runtime files except hosting marker .nojekyll; publicly fetched bytes compared with local build. No map provider tile/data collection.",
+  "passed": true,
+  "results": [
+    {
+      "path": "assets/cormorant-garamond-cyrillic-500-normal-CyAY5ZLS.woff2",
+      "status": 200,
+      "bytes": 12920,
+      "sha256": "30aec8d9cdb4ea84534ffcd7c58b0f06069f63dc177b5aafd7438627dfe10fb8",
+      "localSha256": "30aec8d9cdb4ea84534ffcd7c58b0f06069f63dc177b5aafd7438627dfe10fb8",
+      "identical": true
+    },
+    {
+      "path": "assets/cormorant-garamond-cyrillic-500-normal-DkJXBcIH.woff",
+      "status": 200,
+      "bytes": 15760,
+      "sha256": "77aa93b818437cd94c9b77eb8f06593a7401696bc05af21cb199ec8fa540c706",
+      "localSha256": "77aa93b818437cd94c9b77eb8f06593a7401696bc05af21cb199ec8fa540c706",
+      "identical": true
+    },
+    {
+      "path": "assets/cormorant-garamond-latin-500-normal-BsRWmXhO.woff2",
+      "status": 200,
+      "bytes": 23312,
+      "sha256": "8197bf53615ddc8c423f444c7f0eec63b7fa0ba093fcfbec60dfdd28429b0fc8",
+      "localSha256": "8197bf53615ddc8c423f444c7f0eec63b7fa0ba093fcfbec60dfdd28429b0fc8",
+      "identical": true
+    },
+    {
+      "path": "assets/cormorant-garamond-latin-500-normal-zIXX3Q-H.woff",
+      "status": 200,
+      "bytes": 31372,
+      "sha256": "314ee3edd5ddcdef5cf2374c1126b8be9f7f1ebd6c5c66a23c237f3b836a3ec1",
+      "localSha256": "314ee3edd5ddcdef5cf2374c1126b8be9f7f1ebd6c5c66a23c237f3b836a3ec1",
+      "identical": true
+    },
+    {
+      "path": "assets/index-_qQQm9al.css",
+      "status": 200,
+      "bytes": 29915,
+      "sha256": "e73bdb7790d187876d63843ed167b170bf8146d4ad0737f677b2f2e750aef4be",
+      "localSha256": "e73bdb7790d187876d63843ed167b170bf8146d4ad0737f677b2f2e750aef4be",
+      "identical": true
+    },
+    {
+      "path": "assets/MapPanel-B8-mEBLf.css",
+      "status": 200,
+      "bytes": 82962,
+      "sha256": "946f40662e206d3f7ecf6ef4df1881ff23819a9f93b1419a07e2609f70e7bbf4",
+      "localSha256": "946f40662e206d3f7ecf6ef4df1881ff23819a9f93b1419a07e2609f70e7bbf4",
+      "identical": true
+    },
+    {
+      "path": "assets/index-JU_mGNCl.js",
+      "status": 200,
+      "bytes": 415665,
+      "sha256": "98a37a3fb4fa5be86c05526193491397c86c3e26830bc65e9dc3ceecdd8d4ff1",
+      "localSha256": "98a37a3fb4fa5be86c05526193491397c86c3e26830bc65e9dc3ceecdd8d4ff1",
+      "identical": true
+    },
+    {
+      "path": "assets/maplibre-gl-worker-CRiIRpYb.js",
+      "status": 200,
+      "bytes": 509702,
+      "sha256": "096f3b4deeeaa7ed1372a96978bea3495b78250041df835fada34f12320e11d2",
+      "localSha256": "096f3b4deeeaa7ed1372a96978bea3495b78250041df835fada34f12320e11d2",
+      "identical": true
+    },
+    {
+      "path": "assets/onest-latin-ext-wght-normal-QAhDxQuo.woff2",
+      "status": 200,
+      "bytes": 28452,
+      "sha256": "14e7d3079b75860e2ab50efc6c318c398fdb46ede9b56e625f12ae70a3c5d9a4",
+      "localSha256": "14e7d3079b75860e2ab50efc6c318c398fdb46ede9b56e625f12ae70a3c5d9a4",
+      "identical": true
+    },
+    {
+      "path": "assets/onest-cyrillic-ext-wght-normal-DOFToQv1.woff2",
+      "status": 200,
+      "bytes": 10540,
+      "sha256": "268f03691b3d06e57abcf20f9277e314ea8784298983aab5b40c1b91965027e1",
+      "localSha256": "268f03691b3d06e57abcf20f9277e314ea8784298983aab5b40c1b91965027e1",
+      "identical": true
+    },
+    {
+      "path": "assets/onest-cyrillic-wght-normal-DayYxulF.woff2",
+      "status": 200,
+      "bytes": 15860,
+      "sha256": "68e5e01d6265bd68967746d4f5a9d18d0e6cbb5d15583c7082d6384ab1229b27",
+      "localSha256": "68e5e01d6265bd68967746d4f5a9d18d0e6cbb5d15583c7082d6384ab1229b27",
+      "identical": true
+    },
+    {
+      "path": "assets/MapPanel-rSv63p_v.js",
+      "status": 200,
+      "bytes": 1080935,
+      "sha256": "bc2181daebe78cdf419d0db257f1a2777a92c5cf58ac5f7deafd251e1d44e6af",
+      "localSha256": "bc2181daebe78cdf419d0db257f1a2777a92c5cf58ac5f7deafd251e1d44e6af",
+      "identical": true
+    },
+    {
+      "path": "assets/onest-symbols-wght-normal-DxQzqQfC.woff2",
+      "status": 200,
+      "bytes": 18168,
+      "sha256": "2ec2d45d2ec0770e2c18cba2dba5126cf2dcff181d23ad192e9fffeb4af4b0b6",
+      "localSha256": "2ec2d45d2ec0770e2c18cba2dba5126cf2dcff181d23ad192e9fffeb4af4b0b6",
+      "identical": true
+    },
+    {
+      "path": "assets/onest-math-wght-normal-Bl4ZGkZl.woff2",
+      "status": 200,
+      "bytes": 25480,
+      "sha256": "c74952a8c0c8c558c4f879f83773cf529d11350609f7073f5b2c5999dec46041",
+      "localSha256": "c74952a8c0c8c558c4f879f83773cf529d11350609f7073f5b2c5999dec46041",
+      "identical": true
+    },
+    {
+      "path": "assets/onest-latin-wght-normal-Dun_Rd-l.woff2",
+      "status": 200,
+      "bytes": 33760,
+      "sha256": "052df74533250c2e0ca0c4bdd32de594e107d99c1648e63820ef9c6142067828",
+      "localSha256": "052df74533250c2e0ca0c4bdd32de594e107d99c1648e63820ef9c6142067828",
+      "identical": true
+    },
+    {
+      "path": "assets/onest-vietnamese-wght-normal-BBxOatbv.woff2",
+      "status": 200,
+      "bytes": 12400,
+      "sha256": "d852d4d094a3a46d701d16245deb7ca83b16b5bd69e20aa0aba089392ad69474",
+      "localSha256": "d852d4d094a3a46d701d16245deb7ca83b16b5bd69e20aa0aba089392ad69474",
+      "identical": true
+    },
+    {
+      "path": "assets/Scene-BBPvs4Di.js",
+      "status": 200,
+      "bytes": 4949,
+      "sha256": "d500a87b06c5c7a51a341b6f0487bd177134e770629a7ab8c4b245de00c2e792",
+      "localSha256": "d500a87b06c5c7a51a341b6f0487bd177134e770629a7ab8c4b245de00c2e792",
+      "identical": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 825,
+      "sha256": "adbb143cbf1a3680f74c4b5c4716a99805e72b4a8fc303b56f71503cb39da870",
+      "localSha256": "adbb143cbf1a3680f74c4b5c4716a99805e72b4a8fc303b56f71503cb39da870",
+      "identical": true
+    },
+    {
+      "path": "helio.svg",
+      "status": 200,
+      "bytes": 243,
+      "sha256": "608c11137adc091a58b14492835fb21a92479d3043cefbf129e5131764a4de08",
+      "localSha256": "608c11137adc091a58b14492835fb21a92479d3043cefbf129e5131764a4de08",
+      "identical": true
+    },
+    {
+      "path": "assets/three.module-hWLjphbp.js",
+      "status": 200,
+      "bytes": 561577,
+      "sha256": "c6704dbb2e5e0055a89c166a1968082fc5c719a4acbbced70e20c4553cd2c5c1",
+      "localSha256": "c6704dbb2e5e0055a89c166a1968082fc5c719a4acbbced70e20c4553cd2c5c1",
+      "identical": true
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "status": 200,
+      "bytes": 79922,
+      "sha256": "846f30ef6327242e162aa350fb0fa70fbfd46f2cb73a0667d3307ce5e7301167",
+      "localSha256": "846f30ef6327242e162aa350fb0fa70fbfd46f2cb73a0667d3307ce5e7301167",
+      "identical": true
+    }
+  ]
+}

@@ -24,6 +24,8 @@ The production style is inspected through map.getStyle() before choosing the vec
 
 Stable-ID fragments with matching height/base are unioned, preserving holes and MultiPolygons. Without an ID, exact geometric duplicates are removed conservatively. Polygons are clipped to the visible dashed 300 m boundary. Hidden 3D contours are excluded. Input, vertex and part budgets produce explicit incompleteness, never a silent clear result.
 
+The final contour cap is 8,192 closed points, bounding actual nonindexed building position buffers to 98,304 vertices plus a four-position ground receiver. The 240-part cap remains. Cream roof caps, darker walls, cold-blue cast shadows and a quieter basemap distinguish the model without changing geometry. The 26 px marker retains a 44 × 44 px touch target.
+
 **Every live-map height is a cartographic estimate.** Render heights may be generated and their original provenance is unavailable. Invalid or missing values use conditional 9 m height / 0 m base and are counted in the UI. Heights are never labelled measured or verified. Flat ground, loaded buildings only: trees, weather, actual terrain, missing buildings and obstacles outside the boundary are excluded. No footprints means insufficient data, not an empty street.
 
 Point states: sun below horizon; point inside a building (choose outside); shadow from a loaded building; loaded buildings do not block the sun; insufficient data. A clear ray is **not a sunlight guarantee**. Low sun has a prominent warning: a 100 m building at 10° casts a shadow about 567 m long, beyond this model. Ordinary fill extrusions are hidden and are not presented as casting shadows.
@@ -44,11 +46,15 @@ Date range 1900–2100. Coordinates require finite ±90° latitude / ±180° lon
 
 Ordinary interactive viewport loading only. No Overpass, Nominatim, external geocoder, scraping, offline tile collection or automatic map-data snapshots. City search is a local nine-city list, not address search. Network failure preserves the selected point and solar plan and reports unavailable map/building data.
 
+A failed source tile prevents the partial neighborhood from being treated as complete, including after time changes. “Retry map” remounts the map and retains the selected point, date and time. Rendering is suspended offscreen and in a hidden document; returning to view uses the latest solar position.
+
 Solar calculations are local. No automatic storage, analytics, geolocation or server. Application runtime/fonts are self-hosted. Save uses only the explicit helio.saved-plan.v1 action, with separate restore/delete. User-triggered JSON/ICS downloads include coordinates and zone. Source/provider links are explicit external navigation.
 
 ## Evidence and access
 
-[Baseline numerical audit](evidence/audit-numerical.md), [baseline design audit](evidence/audit-design.md) and [baseline live QA](evidence/live-qa.md) document the earlier open-horizon release. They are not evidence for the later map model. New map audits and final regression are recorded separately as they execute.
+[Map audit 1: code, geometry and security](evidence/audit-map-code.md), [map audit 2: design, accessibility and performance](evidence/audit-map-design.md), [map audit 3: independent public regression](evidence/audit-map-final.md), and [public directed QA / paired GPU screenshots](evidence/live-map-qa.md) describe the city-map release and their exact scope.
+
+[Baseline numerical audit](evidence/audit-numerical.md), [baseline design audit](evidence/audit-design.md) and [baseline live QA](evidence/live-qa.md) document the earlier open-horizon release. They are not substituted for the later map audits.
 
 Primary-repository USNO/JPL fixtures are used because the direct current USNO API was unavailable. Browser viewport/touch tests are not physical phones or installed Safari; axe is not screen-reader certification. Reduced motion removes camera easing, DPR is capped at 1.5 and the custom layer renders only for updates.
 

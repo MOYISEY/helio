@@ -1,0 +1,132 @@
+{
+  "at": "2026-10-02T15:58:26.922Z",
+  "url": "https://moyisey.github.io/helio/",
+  "scope": "Directed Chromium interactions with normal provider viewport loading. No tile or GeoJSON snapshots. Emulated desktop/mobile, not physical devices.",
+  "checks": [
+    {
+      "width": 1440,
+      "groups": [
+        "RU/EN local city search and no-result recovery",
+        "real loaded contours and bounded 3D model",
+        "visible linked provider attribution",
+        "three sunlight positions; synchronized timeline; no new building tile requests",
+        "night has separate state",
+        "both timeline directions and keyboard",
+        "map pitch and north reset",
+        "map zoom controls",
+        "map centre point invalidates old model",
+        "canvas point selection",
+        "draggable selected marker",
+        "all available solar event buttons",
+        "additional horizon 3D/2D and all headings",
+        "language changes",
+        "date navigation and now",
+        "explicit save restore delete",
+        "actual JSON and ICS download files",
+        "manual coordinates and zone validation",
+        "DST repeated hours",
+        "polar night"
+      ],
+      "errors": [],
+      "providerRequests": 30,
+      "tileRequests": 20,
+      "failedRequests": [
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "passed": true,
+      "parts": 134
+    },
+    {
+      "width": 390,
+      "groups": [
+        "RU/EN local city search and no-result recovery",
+        "real loaded contours and bounded 3D model",
+        "visible linked provider attribution",
+        "three sunlight positions; synchronized timeline; no new building tile requests",
+        "night has separate state",
+        "both timeline directions and keyboard",
+        "map pitch and north reset",
+        "map zoom controls",
+        "map centre point invalidates old model",
+        "canvas point selection",
+        "draggable selected marker",
+        "all available solar event buttons",
+        "additional horizon 3D/2D and all headings",
+        "language changes",
+        "date navigation and now",
+        "explicit save restore delete",
+        "actual JSON and ICS download files",
+        "manual coordinates and zone validation",
+        "DST repeated hours",
+        "polar night"
+      ],
+      "errors": [],
+      "providerRequests": 21,
+      "tileRequests": 13,
+      "failedRequests": [
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "host": "tiles.openfreemap.org",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "passed": true,
+      "parts": 134
+    },
+    {
+      "scenario": "noWebGL",
+      "errors": [],
+      "passed": true
+    },
+    {
+      "scenario": "network",
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "runtimeCommit": "e2194f8f03fa7d48bf74d7697b30d933685d378b",
+  "runtimeEntry": "index-JU_mGNCl.js"
+}
