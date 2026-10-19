@@ -16,6 +16,7 @@ test('published JPL Horizons positions preserve degree units and north-clockwise
   const actual=positionAt(Date.parse(instant),place(loc.lat,loc.lng));const azimuthError=Math.abs((actual.azimuth-expected.azimuth+540)%360-180),altitudeError=Math.abs(actual.altitude-expected.altitude);
   comparisons.push({location:loc.name,instant,actual,expected,azimuthError,altitudeError});assert.ok(azimuthError<=.05,`${loc.name} ${instant} azimuth ${azimuthError}`);assert.ok(altitudeError<=.25,`${loc.name} ${instant} altitude ${altitudeError}`);
  }
+ mkdirSync('qa-private/numerical-reference',{recursive:true});
  writeFileSync('qa-private/numerical-reference/helio-jpl-comparison.json',JSON.stringify({checkedAt:new Date().toISOString(),source:fx.source,comparisons,maxAzimuthError:Math.max(...comparisons.map(c=>c.azimuthError)),maxAltitudeError:Math.max(...comparisons.map(c=>c.altitudeError))},null,2));assert.equal(comparisons.length,728);
 });
 
