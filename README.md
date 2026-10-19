@@ -1,12 +1,18 @@
-# Helio / Daylight Atlas
+# Helio / атлас дневного света
 
-[Open Helio](https://moyisey.github.io/helio/) · [Source](https://github.com/MOYISEY/helio)
+[Открыть Helio](https://moyisey.github.io/helio/) · [Исходный код](https://github.com/MOYISEY/helio)
 
-A daylight planner with an interactive city map and a bounded model of building shadows. React, TypeScript, MapLibre and Three.js. Search a local list of nine cities, then select a street or courtyard by clicking, dragging the marker, or using the keyboard and “Use map centre”. Moving the point preserves the explicitly selected IANA zone; check it when changing regions.
+Helio помогает выбрать время и точку для съёмки на улице: показывает положение солнца, световые интервалы и примерную тень от зданий вокруг выбранного места. Это интерактивная карта на React, TypeScript, MapLibre и Three.js с расчётами на устройстве пользователя.
 
-“Build this neighborhood” reads contours from already loaded OpenFreeMap vector tiles and constructs a 300 × 300 m Three.js model. Directional light casts actual shadow maps. Moving the local-day timeline updates light and tests a ray from the point at 1.6 m height against the same meshes. It does not rebuild or request buildings again. The open-horizon world and its 2D panorama remain an additional mode.
+![Карта и временная шкала Helio на компьютере](evidence/screenshots-map-final/desktop-morning-panel.png)
 
-## Run and build
+[Мобильный экран](evidence/screenshots-map-final/mobile-morning-panel.png) · [Вечерний пример](evidence/screenshots-map-final/desktop-evening-panel.png)
+
+Выберите один из девяти городов, укажите улицу или двор щелчком по карте, перетаскиванием маркера, клавиатурой либо кнопкой «Выбрать центр карты». Затем нажмите «Построить квартал здесь» и перемещайтесь по шкале местного дня. При переносе точки сохраняется явно выбранный часовой пояс IANA — при переходе в другой регион его нужно проверить. Режим открытого горизонта с двумерной панорамой доступен отдельно.
+
+## Запуск и проверка
+
+Нужны Node.js 24 и npm:
 
 ```sh
 npm ci
@@ -16,48 +22,46 @@ npm run build
 npm run preview -- --port 5176
 ```
 
-The committed docs build is served free by GitHub Pages from main, with Vite base /helio/. Tests use Node 24 native TypeScript stripping. Browser QA uses Playwright and its browsers or PLAYWRIGHT_BROWSERS_PATH / PLAYWRIGHT_BROWSER_EXECUTABLE_PATH.
+`npm run dev` запускает локальный сервер; `npm run preview` показывает собранную версию. Сборка в отслеживаемом каталоге `docs/` публикуется через GitHub Pages из ветки `main`; базовый путь Vite — `/helio/`. Тесты используют встроенную обработку TypeScript в Node 24. Для локальных браузерных проверок нужен Playwright и его браузеры либо `PLAYWRIGHT_BROWSERS_PATH` / `PLAYWRIGHT_BROWSER_EXECUTABLE_PATH`. CI выполняет установку, модульные тесты и сборку без ключей и платных сервисов.
 
-## Building model and limitations
+## Как устроено
 
-The production style is inspected through map.getStyle() before choosing the vector building source. At implementation time, [Liberty](https://tiles.openfreemap.org/styles/liberty) uses source openmaptiles, source-layer building and render_height, render_min_height, hide_3d. [TileJSON](https://tiles.openfreemap.org/planet) describes OpenMapTiles 3.16.0, building tiles at zooms 13–14. querySourceFeatures returns clipped pieces and duplicates from loaded viewport tiles, not a complete inventory of surrounding obstacles.
+- `src/App.tsx` управляет выбором места, времени, языка и режимов; карта и 3D-сцена загружаются отдельно.
+- `src/solar.ts`, `src/state.ts`, `src/export.ts` рассчитывают солнечные интервалы, проверяют входные данные и создают JSON/ICS.
+- `src/MapPanel.tsx`, `src/buildings.ts`, `src/ShadowLayer.ts` читают уже загруженные в карте векторные тайлы, строят ограниченную модель зданий и рассчитывают тень. `src/Scene.tsx` отвечает за отдельный режим открытого горизонта.
 
-Stable-ID fragments with matching height/base are unioned, preserving holes and MultiPolygons. Without an ID, exact geometric duplicates are removed conservatively. Polygons are clipped to the visible dashed 300 m boundary. Hidden 3D contours are excluded. Input, vertex and part budgets produce explicit incompleteness, never a silent clear result.
+После команды «Построить окружение» Helio собирает контуры зданий внутри границы 300 × 300 м. Направленный источник света создаёт карту теней; для выбранной точки на высоте 1,6 м дополнительно проверяется луч к солнцу относительно тех же зданий. Перемещение шкалы обновляет свет без повторного построения зданий. При скрытой вкладке или выходе сцены за экран рендеринг приостанавливается.
 
-The final contour cap is 8,192 closed points, bounding actual nonindexed building position buffers to 98,304 vertices plus a four-position ground receiver. The 240-part cap remains. Cream roof caps, darker walls, cold-blue cast shadows and a quieter basemap distinguish the model without changing geometry. The 26 px marker retains a 44 × 44 px touch target.
+В рабочем стиле [Liberty](https://tiles.openfreemap.org/styles/liberty) источник `openmaptiles`, слой `building` и свойства `render_height`, `render_min_height`, `hide_3d` определяются через `map.getStyle()`. [TileJSON](https://tiles.openfreemap.org/planet) описывает OpenMapTiles 3.16.0 и тайлы зданий масштабов 13–14. `querySourceFeatures` возвращает обрезанные фрагменты и дубликаты из уже загруженной части карты, а не полный список препятствий. Фрагменты с общим устойчивым ID и одинаковой высотой/основанием объединяются с сохранением отверстий и мультиполигонов; без ID удаляются лишь точные геометрические дубликаты. Скрытые 3D-контуры исключаются. Лимиты входных данных, частей и вершин приводят к явному состоянию неполноты.
 
-**Every live-map height is a cartographic estimate.** Render heights may be generated and their original provenance is unavailable. Invalid or missing values use conditional 9 m height / 0 m base and are counted in the UI. Heights are never labelled measured or verified. Flat ground, loaded buildings only: trees, weather, actual terrain, missing buildings and obstacles outside the boundary are excluded. No footprints means insufficient data, not an empty street.
+Итоговый предел контура — 8192 замкнутые точки, не более 98 304 вершин в неиндексированных буферах зданий плюс четыре позиции поверхности земли; предел частей — 240. Светлые крыши, более тёмные стены, холодные синие тени и спокойная подложка помогают читать модель, не меняя геометрию. У маркера размер 26 px и область касания 44 × 44 px.
 
-Point states: sun below horizon; point inside a building (choose outside); shadow from a loaded building; loaded buildings do not block the sun; insufficient data. A clear ray is **not a sunlight guarantee**. Low sun has a prominent warning: a 100 m building at 10° casts a shadow about 567 m long, beyond this model. Ordinary fill extrusions are hidden and are not presented as casting shadows.
+## Точность и ограничения
 
-Local east/up/south is transformed into Mercator east/south/up; the validated solar direction is shared. Meshes, materials and shadow maps are disposed when the model changes. WebGL failure keeps city search and solar calculations with an honest unavailable message. Near ±85° latitude the map projection ends; solar calculations retain the exact coordinates.
+**Все высоты зданий на живой карте — картографические оценки.** Исходное происхождение `render_height` неизвестно; некорректные или отсутствующие значения условно заменяются на 9 м высоты и 0 м основания, и такие случаи считаются в интерфейсе. Высоты не представлены как измеренные. Модель предполагает плоскую землю и учитывает только загруженные здания: деревья, погоду, рельеф, отсутствующие здания и препятствия за границей не учитывает. Отсутствие контуров означает недостаточно данных, а не пустую улицу.
 
-## Solar calculation contract
+Возможные состояния точки: солнце ниже горизонта; точка внутри здания; тень от загруженного здания; загруженные здания не перекрывают солнце; недостаточно данных. Свободный луч **не гарантирует прямой солнечный свет**. При низком солнце есть предупреждение: здание высотой 100 м при 10° даёт тень около 567 м, дальше пределов модели. Обычные 3D-экструзии карты скрыты и не выдаются за источник теней.
 
-[SunCalc 2.1.0](https://github.com/mourner/suncalc/tree/v2.1.0) uses degrees, azimuth clockwise from north and apparent altitude. Helio inverts refraction for geometric phase thresholds; displayed apparent position stays unchanged. Sunrise/set use −0.833°, civil twilight −6° to −0.833°, golden light −0.833° to +6°. High-latitude windows can exceed an hour or fill a day. Missing crossings stay absent; polar day/night and winter twilight remain distinct.
+Локальные оси восток/верх/юг преобразуются в оси Меркатора восток/юг/верх; используется единое проверенное направление на солнце. При изменении модели освобождаются меши, материалы и карты теней. При сбое WebGL поиск города и солнечные расчёты продолжают работать с сообщением о недоступной 3D-сцене. Вблизи ±85° широты картографическая проекция заканчивается, но солнечный расчёт сохраняет точные координаты.
 
-Temporal resolves actual IANA day boundaries, including 23/25-hour days and skipped dates. The slider uses elapsed minutes, with UTC offsets distinguishing repeated hours. Display rounds to minutes; JSON retains unrounded UTC instants and ICS creates a thirty-minute appointment. Solar event times are for an open horizon and standard refraction, separate from the building ray test. See [USNO definitions](https://aa.usno.navy.mil/faq/RST_defs).
+Положение солнца вычисляется через [SunCalc 2.1.0](https://github.com/mourner/suncalc/tree/v2.1.0): азимут отсчитывается по часовой стрелке от севера. Для геометрических границ фаз Helio обращает поправку на рефракцию, сохраняя отображаемую видимую высоту. Восход/закат: −0,833°, гражданские сумерки: от −6° до −0,833°, мягкий свет: от −0,833° до +6°. В высоких широтах интервалы могут длиться больше часа или весь день; отсутствие пересечения, полярный день/ночь и зимние сумерки различаются.
 
-Date range 1900–2100. Coordinates require finite ±90° latitude / ±180° longitude and explicit valid zone. URL settings city, zone, date, time, lang, view=2d recover invalid values with feedback; ambiguous/gap wall times are rejected. Coordinates are not inserted in generated URLs.
+Temporal задаёт действительные границы суток IANA, включая дни длиной 23/25 часов и пропущенные даты. Шкала использует прошедшие минуты; повторяющиеся часы различаются смещением UTC. Интерфейс округляет минуты, JSON сохраняет точные моменты UTC, ICS создаёт событие на 30 минут. Времена солнечных событий рассчитаны для открытого горизонта и стандартной рефракции отдельно от проверки луча на зданиях; см. [определения USNO](https://aa.usno.navy.mil/faq/RST_defs).
 
-## Map provider and privacy
+Допустимые даты: 1900–2100. Координаты должны быть конечными числами в пределах ±90° широты и ±180° долготы, пояс — действительным IANA. Некорректные параметры URL (`city`, `zone`, `date`, `time`, `lang`, `view=2d`) восстанавливаются с уведомлением; несуществующее и неоднозначное местное время отклоняется. Координаты не добавляются в создаваемые ссылки.
 
-[OpenFreeMap](https://openfreemap.org/quick_start/) and its CDN serve the map without keys or accounts, with visible linked OpenFreeMap, [OpenMapTiles](https://www.openmaptiles.org/) and [OpenStreetMap](https://www.openstreetmap.org/copyright) attribution. Requests reveal the viewed tile area and ordinary network information to the external provider/CDN. Read its [privacy policy](https://openfreemap.org/privacy/) and [terms](https://openfreemap.org/tos/). The service has no availability guarantee.
+## Карта и приватность
 
-Ordinary interactive viewport loading only. No Overpass, Nominatim, external geocoder, scraping, offline tile collection or automatic map-data snapshots. City search is a local nine-city list, not address search. Network failure preserves the selected point and solar plan and reports unavailable map/building data.
+[OpenFreeMap](https://openfreemap.org/quick_start/) и его CDN отдают карту без ключей и учётной записи. В интерфейсе есть ссылки на [OpenFreeMap](https://openfreemap.org/), [OpenMapTiles](https://www.openmaptiles.org/) и [OpenStreetMap](https://www.openstreetmap.org/copyright). Запросы раскрывают провайдеру/CDN область просмотра и обычные сетевые данные; см. [политику приватности](https://openfreemap.org/privacy/) и [условия](https://openfreemap.org/tos/). Гарантии доступности сервиса нет.
 
-A failed source tile prevents the partial neighborhood from being treated as complete, including after time changes. “Retry map” remounts the map and retains the selected point, date and time. Rendering is suspended offscreen and in a hidden document; returning to view uses the latest solar position.
+Карта загружает только тайлы текущего окна. Overpass, Nominatim, внешний геокодер, сбор тайлов офлайн и автоматические снимки картографических данных не используются. Поиск города — локальный список из девяти городов, не адресный поиск. При сетевом сбое точка и план остаются, а карта/данные зданий отмечаются недоступными. Сбой загрузки одного тайла не позволяет считать частичную модель полной даже после изменения времени. «Загрузить карту заново» пересоздаёт карту, сохраняя точку, дату и время.
 
-Solar calculations are local. No automatic storage, analytics, geolocation or server. Application runtime/fonts are self-hosted. Save uses only the explicit helio.saved-plan.v1 action, with separate restore/delete. User-triggered JSON/ICS downloads include coordinates and zone. Source/provider links are explicit external navigation.
+Солнечные расчёты локальные. Нет автоматического сохранения, аналитики, геолокации и собственного сервера; код и шрифты размещены вместе с сайтом. Сохранение происходит только по явному действию `helio.saved-plan.v1` с отдельным восстановлением и удалением. JSON/ICS, скачанные пользователем, содержат координаты и часовой пояс. Переходы по ссылкам на провайдера и исходники явные.
 
-## Evidence and access
+## Проверки и права
 
-[Map audit 1: code, geometry and security](evidence/audit-map-code.md), [map audit 2: design, accessibility and performance](evidence/audit-map-design.md), [map audit 3: independent public regression](evidence/audit-map-final.md), and [public directed QA / paired GPU screenshots](evidence/live-map-qa.md) describe the city-map release and their exact scope.
+[Аудит карты: код, геометрия и безопасность](evidence/audit-map-code.md), [дизайн, доступность и производительность](evidence/audit-map-design.md), [независимая публичная регрессия](evidence/audit-map-final.md), [QA публичной карты и парные GPU-кадры](evidence/live-map-qa.md) описывают выпуск карты и границы проверок. [Численный аудит базовой версии](evidence/audit-numerical.md), [аудит дизайна](evidence/audit-design.md) и [QA базовой версии](evidence/live-qa.md) относятся к более раннему режиму открытого горизонта.
 
-[Baseline numerical audit](evidence/audit-numerical.md), [baseline design audit](evidence/audit-design.md) and [baseline live QA](evidence/live-qa.md) document the earlier open-horizon release. They are not substituted for the later map audits.
+В тестах использованы сохранённые исходные USNO/JPL-данные, поскольку прямой текущий USNO API был недоступен. Проверка браузера с мобильным размером окна и касанием не равна физическому телефону или установленному Safari; axe не заменяет проверку скринридером. Reduced motion отключает плавность камеры; DPR ограничен 1,5, кастомный слой рисуется лишь при обновлениях. Художественный мир открытого горизонта не калиброван по углу каждого пикселя. Сцена создана без скопированных ассетов. Родительский и отдельный визуальный рецензенты просмотрели референсные видео; Windows-исполнитель не смог открыть их после сбоя Library-помощника, что было явно принято как исключение.
 
-Primary-repository USNO/JPL fixtures are used because the direct current USNO API was unavailable. Browser viewport/touch tests are not physical phones or installed Safari; axe is not screen-reader certification. Reduced motion removes camera easing, DPR is capped at 1.5 and the custom layer renders only for updates.
-
-The authored open-horizon world has an artistic scale, not scientific pixel-angle calibration; no copied scene assets. The parent and separate visual reviewer viewed the reference videos. The Windows worker did not view them after a Library helper compatibility issue and explicit waiver.
-
-Full runtime/font licenses are in [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) and the public build.
+Лицензии сторонних библиотек и шрифтов перечислены в [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) и публичной сборке. Отдельной лицензии на исходный код Helio в репозитории нет.
